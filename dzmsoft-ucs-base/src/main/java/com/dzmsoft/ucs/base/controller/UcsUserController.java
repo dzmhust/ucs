@@ -49,6 +49,16 @@ public class UcsUserController extends BaseController{
         model.addAttribute("ucsUser", UserUtil.getCurrentShiroUser());
         return "system/updatePwdForm";
     }
+    
+    @RequestMapping(value = "updatePwd", method = RequestMethod.POST)
+    @ResponseBody
+    public BaseResponse updatePwd(String password){
+        String id = UserUtil.getCurrentShiroUser().getId();
+        int flag = ucsUserService.updatePassword(id, password);
+        BaseResponse baseResponse = flag > 0 ? new BaseResponse(true, "密码更新成功") : new BaseResponse(
+                false, "密码更新失败");
+        return baseResponse;
+    }
 
 	/**
 	 * 显示主列表页面

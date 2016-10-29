@@ -74,22 +74,23 @@ public class UserRealm extends AuthorizingRealm {
         } catch(Exception e){
             throw new IllegalArgumentException("参数异常");
         }
-        // 根据用户名获取账号信息
-        UcsUser ucsUser = ucsUserService.selectByUsername(authcToken.getUsername());
-        // 验证码校验
-        if (null == ucsUser){
-            throw new UnknownAccountException();//没找到帐号
-        }
-        String ciphertextPassword = new SimpleHash(hashAlgorithmName,authcToken.getPassword(),ByteSource.Util.bytes(ucsUser.getSalt()),hashIterations).toHex();
-        if (!ciphertextPassword.equals(ucsUser.getPassword())){
-            throw new UnknownAccountException();//没找到帐号
-        }
-        // 验证用户状态的合法性
-        if (!BaseConstant.Status.ENABLE.equals(ucsUser.getStatus())){
-            throw new IncorrectCredentialsException("授权失败");
-        }
-        // 验证码校验
+        // 校验验证码是否正确
         if (doCaptchaValidate(authcToken)) {
+         // 根据用户名获取账号信息
+            UcsUser ucsUser = ucsUserService.selectByUsername(authcToken.getUsername());
+            // 验证码校验
+            if (null == ucsUser){
+                throw new UnknownAccountException();//没找到帐号
+            }
+            String ciphertextPassword = new SimpleHash(hashAlgorithmName,authcToken.getPassword(),ByteSource.Util.bytes(ucsUser.getSalt()),hashIterations).toHex();
+            if (!ciphertextPassword.equals(ucsUser.getPassword())){
+                throw new UnknownAccountException();//没找到帐号
+            }
+            // 验证用户状态的合法性
+            if (!BaseConstant.Status.ENABLE.equals(ucsUser.getStatus())){
+                throw new IncorrectCredentialsException("授权失败");
+            }
+            //
             ShiroUser shiroUser = new ShiroUser(ucsUser.getId(), ucsUser.getUsername(),
                     ucsUser.getName());
             return new SimpleAuthenticationInfo(shiroUser, ucsUser.getPassword(),

@@ -14,6 +14,13 @@ import com.dzmsoft.ucs.base.pojo.UcsUserExample;
  * @version 
  */
 public interface UcsUserService {
+    /**
+     * 修改用户名、密码
+     * @param username
+     * @param password
+     * @return
+     */
+    int updatePwd(String id, String password);
     
     /**
      * 修改密码

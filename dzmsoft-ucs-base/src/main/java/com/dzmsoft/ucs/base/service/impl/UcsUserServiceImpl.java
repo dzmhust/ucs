@@ -44,6 +44,18 @@ public class UcsUserServiceImpl implements UcsUserService {
 
     @Autowired
     private UcsUserMapper ucsUserMapper;
+    
+    @Transactional(readOnly = false)
+    @Override
+    public int updatePwd(String id, String password) {
+        //
+        UcsUser record = new UcsUser();
+        record.setId(id);
+        record.setPassword(password);
+        entryptPassword(record);
+        //
+        return updateByPrimaryKeySelective(record);
+    }
 
     @Transactional(readOnly = false)
     @Override
