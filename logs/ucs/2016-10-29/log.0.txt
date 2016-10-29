@@ -1,0 +1,729 @@
+08:45:10.028 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+08:45:11.428 INFO  /ucs - Initializing Spring root WebApplicationContext
+08:45:20.228 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+08:45:22.439 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+08:45:23.726 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+08:45:23.737 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+08:45:23.818 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+08:45:23.819 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+08:45:23.820 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+08:45:23.821 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+08:45:23.822 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+08:45:23.822 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+08:45:23.822 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+08:45:23.822 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+08:45:23.822 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+08:45:23.823 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Disabled session validation scheduler.
+08:45:23.861 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+08:45:23.889 WARN  org.eclipse.jetty.webapp.WebAppContext - Failed startup of context o.e.j.w.WebAppContext{/ucs,file:/F:/dzmsoftwork/walle/ucs/ucs/src/main/webapp/},src/main/webapp
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name '/syncMonitorAutoCollectData' defined in file [F:\dzmsoftwork\walle\ucs\ucs\target\classes\spring\spring-hessian-server.xml]: Cannot resolve reference to bean 'syncMonitorAutoCollectDataServiceImpl' while setting bean property 'service'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'syncMonitorAutoCollectDataServiceImpl' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839) ~[spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538) ~[spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:782) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:424) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:774) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:249) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242) ~[jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494) ~[jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at com.dzmsoft.ucs.web.test.QuickStartServer.main(QuickStartServer.java:29) [test-classes/:na]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'syncMonitorAutoCollectDataServiceImpl' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	... 27 common frames omitted
+08:45:23.990 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+08:45:24.527 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+08:45:51.881 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+08:45:52.229 INFO  /ucs - Initializing Spring root WebApplicationContext
+08:45:54.791 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+08:45:56.325 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+08:45:58.266 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+08:45:59.551 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+08:46:00.913 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+08:46:00.955 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+08:46:17.853 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+08:46:17.894 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+08:46:17.898 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp22600334-29
+08:46:17.914 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+08:46:17.915 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+08:46:17.916 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+08:46:17.917 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+08:46:17.917 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+08:46:17.917 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+08:46:17.918 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+08:46:17.936 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+08:46:17.957 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+08:46:18.739 WARN  org.eclipse.jetty.servlet.ServletHandler - 
+org.apache.jasper.JasperException: PWC6299: The class com.dzmsoft.acs.inner.common.InnerStaticConfig specified in TLD for the function fns:getCcs_ctx cannot be found: com.dzmsoft.acs.inner.common.InnerStaticConfig
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:92) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:172) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Validator$ValidateVisitor$1MapperELVisitor.visit(Validator.java:1729) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ELNode$Function.accept(ELNode.java:166) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ELNode$Nodes.visit(ELNode.java:237) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ELNode$Visitor.visit(ELNode.java:304) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ELNode$Root.accept(ELNode.java:97) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ELNode$Nodes.visit(ELNode.java:237) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Validator$ValidateVisitor.getFunctionMapper(Validator.java:1770) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Validator$ValidateVisitor.visit(Validator.java:760) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$ELExpression.accept(Node.java:947) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2353) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:499) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Validator$ValidateVisitor.visit(Validator.java:544) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$IncludeDirective.accept(Node.java:648) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2353) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:499) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Validator.validate(Validator.java:1882) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:223) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.JspPropertyGroupServlet.service(JspPropertyGroupServlet.java:132) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1243) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at com.dzmsoft.framework.base.web.filter.CharFilter.doFilter(CharFilter.java:139) ~[com.dzmsoft.framework.base-1.0.1.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+08:46:18.742 WARN  org.eclipse.jetty.servlet.ServletHandler - /ucs/login;JSESSIONID=577e0b3a-4d20-4b3f-acd6-ff7a55cdc41b
+org.apache.jasper.JasperException: PWC6299: The class com.dzmsoft.acs.inner.common.InnerStaticConfig specified in TLD for the function fns:getCcs_ctx cannot be found: com.dzmsoft.acs.inner.common.InnerStaticConfig
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:92) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:172) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Validator$ValidateVisitor$1MapperELVisitor.visit(Validator.java:1729) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ELNode$Function.accept(ELNode.java:166) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ELNode$Nodes.visit(ELNode.java:237) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ELNode$Visitor.visit(ELNode.java:304) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ELNode$Root.accept(ELNode.java:97) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ELNode$Nodes.visit(ELNode.java:237) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Validator$ValidateVisitor.getFunctionMapper(Validator.java:1770) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Validator$ValidateVisitor.visit(Validator.java:760) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$ELExpression.accept(Node.java:947) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2353) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:499) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Validator$ValidateVisitor.visit(Validator.java:544) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$IncludeDirective.accept(Node.java:648) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2347) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2353) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:499) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2297) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Validator.validate(Validator.java:1882) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:223) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.JspPropertyGroupServlet.service(JspPropertyGroupServlet.java:132) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1243) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at com.dzmsoft.framework.base.web.filter.CharFilter.doFilter(CharFilter.java:139) ~[com.dzmsoft.framework.base-1.0.1.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+08:51:54.414 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+08:51:54.766 INFO  /ucs - Initializing Spring root WebApplicationContext
+08:51:57.389 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+08:51:58.752 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+08:52:00.609 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+08:52:01.483 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+08:52:02.830 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+08:52:02.866 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+08:52:10.197 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+08:52:10.236 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+08:52:10.239 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp22600334-30
+08:52:10.258 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+08:52:10.259 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+08:52:10.260 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+08:52:10.261 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+08:52:10.261 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+08:52:10.261 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+08:52:10.262 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+08:52:10.275 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+08:52:10.279 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+09:03:43.281 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+09:03:44.688 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+09:03:46.651 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+09:03:46.655 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: Thread-2
+09:03:46.676 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+09:03:46.677 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+09:03:46.678 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+09:03:46.680 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+09:03:46.680 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+09:03:46.680 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+09:03:46.680 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+09:03:46.680 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+09:03:46.681 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+09:03:46.681 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Disabled session validation scheduler.
+09:03:46.717 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+09:04:32.313 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+09:04:33.629 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+09:04:35.548 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+09:04:35.767 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+09:04:35.773 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: Thread-2
+09:04:35.793 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+09:04:35.794 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+09:04:35.795 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+09:04:35.797 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+09:04:35.797 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+09:04:35.797 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+09:04:35.797 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+09:04:35.797 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+09:04:35.798 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+09:04:35.798 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Disabled session validation scheduler.
+09:04:35.814 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+09:19:44.732 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+09:19:46.128 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+09:19:48.092 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+09:19:48.545 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+09:19:48.551 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: Thread-2
+09:19:48.569 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+09:19:48.570 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+09:19:48.571 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+09:19:48.572 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+09:19:48.573 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+09:19:48.573 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+09:19:48.573 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+09:19:48.573 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+09:19:48.574 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+09:19:48.574 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Disabled session validation scheduler.
+09:19:48.589 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+09:24:10.594 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+09:24:10.980 INFO  /ucs - Initializing Spring root WebApplicationContext
+09:24:13.845 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+09:24:15.413 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+09:24:17.335 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+09:24:18.597 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+09:24:20.044 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+09:24:20.081 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+09:25:51.023 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+09:25:51.094 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+09:25:51.100 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-30
+09:25:51.127 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+09:25:51.129 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+09:25:51.131 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+09:25:51.132 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+09:25:51.133 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+09:25:51.137 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+09:25:51.140 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+09:25:51.169 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+09:25:51.173 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+10:16:02.142 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+10:16:02.673 INFO  /ucs - Initializing Spring root WebApplicationContext
+10:16:06.489 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:16:08.269 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+10:16:10.225 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+10:16:11.695 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+10:16:13.228 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+10:16:13.340 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+10:16:18.279 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+10:16:18.340 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:16:18.344 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-31
+10:16:18.365 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:16:18.366 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+10:16:18.367 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+10:16:18.369 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+10:16:18.369 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+10:16:18.369 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+10:16:18.371 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:16:18.397 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+10:16:18.401 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+10:30:52.718 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+10:30:53.099 INFO  /ucs - Initializing Spring root WebApplicationContext
+10:30:56.091 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:30:57.539 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+10:30:59.494 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+10:31:00.703 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+10:31:02.366 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+10:31:02.403 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+10:31:12.300 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+10:31:12.337 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:31:12.340 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-29
+10:31:12.355 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:31:12.356 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+10:31:12.357 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+10:31:12.358 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+10:31:12.358 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+10:31:12.358 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+10:31:12.360 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:31:12.370 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+10:31:12.374 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+10:32:27.451 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+10:32:27.930 INFO  /ucs - Initializing Spring root WebApplicationContext
+10:32:30.865 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:32:32.244 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+10:32:35.635 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+10:32:37.351 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+10:32:37.387 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+10:32:46.067 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+10:32:46.113 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:32:46.118 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-32
+10:32:46.141 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:32:46.143 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+10:32:46.145 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+10:32:46.147 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+10:32:46.147 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+10:32:46.147 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+10:32:46.150 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:32:46.167 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+10:32:46.172 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+10:32:56.392 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+10:33:14.025 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+10:33:14.402 INFO  /ucs - Initializing Spring root WebApplicationContext
+10:33:17.418 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:33:18.837 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+10:33:22.174 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+10:33:23.784 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+10:33:23.824 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+10:33:24.364 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+10:33:28.896 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+10:33:28.937 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:33:28.940 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-31
+10:33:28.957 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:33:28.958 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+10:33:28.960 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+10:33:28.962 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+10:33:28.962 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+10:33:28.962 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+10:33:28.965 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:33:28.979 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+10:33:28.983 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+10:33:57.790 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+10:33:58.178 INFO  /ucs - Initializing Spring root WebApplicationContext
+10:34:00.968 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:34:02.456 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+10:34:05.663 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+10:34:07.339 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+10:34:07.372 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+10:34:16.756 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+10:34:23.118 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+10:34:23.159 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:34:23.163 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-29
+10:34:23.182 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:34:23.183 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+10:34:23.184 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+10:34:23.186 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+10:34:23.186 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+10:34:23.186 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+10:34:23.188 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:34:23.203 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+10:34:23.208 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+10:35:00.290 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+10:35:00.670 INFO  /ucs - Initializing Spring root WebApplicationContext
+10:35:03.579 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:35:05.024 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+10:35:06.986 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+10:35:08.316 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+10:35:09.948 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+10:35:09.980 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+10:35:15.828 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+10:35:15.868 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:35:15.872 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-31
+10:35:15.887 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:35:15.888 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+10:35:15.889 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+10:35:15.890 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+10:35:15.891 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+10:35:15.891 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+10:35:15.892 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:35:15.907 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+10:35:15.911 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+10:36:24.151 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+10:36:24.534 INFO  /ucs - Initializing Spring root WebApplicationContext
+10:36:27.325 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:36:28.794 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+10:36:31.083 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+10:36:31.856 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+10:36:33.348 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+10:36:33.387 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+10:36:38.538 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+10:36:38.577 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:36:38.580 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-29
+10:36:38.604 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:36:38.605 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+10:36:38.606 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+10:36:38.608 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+10:36:38.608 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+10:36:38.608 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+10:36:38.610 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:36:38.629 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+10:36:38.633 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+10:36:47.847 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain from ucs_user WHERE ( username = ? and status = ? ) 
+10:36:47.877 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+10:36:47.895 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:36:53.744 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:36:53.745 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:36:53.746 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 0
+10:41:09.944 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain from ucs_user WHERE ( username = ? and status = ? ) 
+10:41:09.944 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+10:41:09.946 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:41:15.335 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:41:15.337 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:41:15.342 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:42:13.408 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain from ucs_user WHERE ( username = ? and status = ? ) 
+10:42:13.409 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+10:42:13.418 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:42:13.685 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:42:13.685 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:42:13.688 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:43:17.413 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain from ucs_user WHERE ( username = ? and status = ? ) 
+10:43:17.413 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+10:43:17.415 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:43:18.131 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:43:18.132 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:43:18.135 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:45:18.649 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain from ucs_user WHERE ( username = ? and status = ? ) 
+10:45:18.649 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+10:45:18.650 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:45:18.795 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:45:18.795 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:45:18.804 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:47:30.197 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain from ucs_user WHERE ( username = ? and status = ? ) 
+10:47:30.198 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+10:47:30.199 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:47:30.311 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:47:30.311 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:47:30.329 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 6
+10:48:13.099 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain from ucs_user WHERE ( username = ? and status = ? ) 
+10:48:13.100 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+10:48:13.103 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:48:13.206 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:48:13.206 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:48:13.208 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:50:02.769 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain from ucs_user WHERE ( username = ? and status = ? ) 
+10:50:02.770 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+10:50:02.771 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:50:02.868 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:50:02.869 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:50:02.877 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:50:23.172 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain from ucs_user WHERE ( username = ? and status = ? ) 
+10:50:23.173 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+10:50:23.174 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:50:23.617 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:50:23.617 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:50:23.621 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:51:22.278 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain from ucs_user WHERE ( username = ? and status = ? ) 
+10:51:22.278 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+10:51:22.280 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:51:22.558 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:51:22.558 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:51:22.560 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:51:25.092 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsUser.status = ? and ucsPermission.type = ? ) 
+10:51:25.092 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), 02(String)
+10:51:25.095 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 16
+10:51:26.301 DEBUG c.d.u.b.d.UcsRoleMapper.selectByExample - ==>  Preparing: select id, name, description, status, create_time, domain from ucs_role order by name asc limit ? 
+10:51:26.302 DEBUG c.d.u.b.d.UcsRoleMapper.selectByExample - ==> Parameters: 20(Integer)
+10:51:26.304 DEBUG c.d.u.b.d.UcsRoleMapper.selectByExample - <==      Total: 1
+10:52:27.664 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain from ucs_user order by username asc limit ? 
+10:52:27.665 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:52:27.667 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:53:32.041 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain from ucs_user order by username asc limit ? 
+10:53:32.041 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:53:32.042 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:57:11.147 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+10:57:11.531 INFO  /ucs - Initializing Spring root WebApplicationContext
+10:57:14.447 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:57:15.871 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+10:57:17.544 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+10:57:18.865 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+10:57:20.333 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+10:57:20.374 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+10:57:25.518 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+10:57:25.558 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+10:57:25.562 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-27
+10:57:25.578 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:57:25.579 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+10:57:25.580 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+10:57:25.581 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+10:57:25.582 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+10:57:25.582 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+10:57:25.583 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+10:57:25.596 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+10:57:25.600 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+10:57:35.456 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type from ucs_user WHERE ( username = ? and status = ? ) 
+10:57:35.488 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+10:57:35.506 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:57:36.362 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:57:36.363 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:57:36.368 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:57:38.414 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsUser.status = ? and ucsPermission.type = ? ) 
+10:57:38.415 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), 02(String)
+10:57:38.426 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 16
+10:57:39.286 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type from ucs_user order by username asc limit ? 
+10:57:39.288 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:57:39.289 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+10:57:49.051 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type from ucs_user order by username asc limit ? 
+10:57:49.051 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:57:49.054 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
