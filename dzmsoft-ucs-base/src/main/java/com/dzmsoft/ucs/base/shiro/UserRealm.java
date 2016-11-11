@@ -80,11 +80,11 @@ public class UserRealm extends AuthorizingRealm {
             UcsUser ucsUser = ucsUserService.selectByUsername(authcToken.getUsername());
             // 验证码校验
             if (null == ucsUser){
-                throw new UnknownAccountException();//没找到帐号
+                throw new UnknownAccountException("此用户不存在");//没找到帐号
             }
             String ciphertextPassword = new SimpleHash(hashAlgorithmName,authcToken.getPassword(),ByteSource.Util.bytes(ucsUser.getSalt()),hashIterations).toHex();
             if (!ciphertextPassword.equals(ucsUser.getPassword())){
-                throw new UnknownAccountException();//没找到帐号
+                throw new UnknownAccountException("用户名或密码不正确");//没找到帐号
             }
             // 验证用户状态的合法性
             if (!BaseConstant.Status.ENABLE.equals(ucsUser.getStatus())){

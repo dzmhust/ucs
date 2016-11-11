@@ -35,7 +35,7 @@
 				<div class="login_main_yzm">
 					<div>
 					<input type="text" id="captcha" name="captcha"/>
-					<img alt="验证码" src="${ctx}/resources/images/kaptcha.jpg" title="点击更换" id="img_captcha" onclick="javascript:refreshCaptcha();" />
+					<img alt="验证码"  src="${ctx}/resources/images/kaptcha.jpg" title="点击更换" id="img_captcha" onclick="javascript:refreshCaptcha();" />
 					</div>
 				</div>
 				<div class="login_main_remb">

@@ -104,7 +104,6 @@
 		<property name="failureKeyAttribute" value="shiroLoginFailure"/>
 	</bean>
 	
-	<bean id="myCaptchaFilter" class="com.dzmsoft.framework.base.web.filter.FormAuthenticationCaptchaFilter"/>
 	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
 		<property name="securityManager" ref="securityManager" />
 		<property name="loginUrl" value="/login" />
@@ -120,7 +119,7 @@
 			/resources/** = anon
 			/ueditor/** = anon
 			/upload/** = anon
-			/login = captchaFilter,authc
+			/login = authc
 			/rest/**=anon
 			/hessian/**=anon
 			/logout = logout

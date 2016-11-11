@@ -727,3 +727,151 @@ org.apache.jasper.JasperException: PWC6299: The class com.dzmsoft.acs.inner.comm
 10:57:49.051 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type from ucs_user order by username asc limit ? 
 10:57:49.051 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
 10:57:49.054 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+14:26:04.534 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+14:26:05.014 INFO  /ucs - Initializing Spring root WebApplicationContext
+14:26:08.686 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+14:26:10.314 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+14:26:13.670 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+14:26:13.772 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+14:26:15.312 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+14:26:15.382 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+14:44:10.360 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+14:44:10.407 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+14:44:10.412 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-28
+14:44:10.431 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:44:10.432 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+14:44:10.433 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+14:44:10.435 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+14:44:10.435 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+14:44:10.435 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+14:44:10.436 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+14:44:10.451 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+14:44:10.455 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+14:44:10.620 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type from ucs_user WHERE ( username = ? and status = ? ) 
+14:44:10.656 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+14:44:10.676 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+14:56:53.369 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+14:56:53.719 INFO  /ucs - Initializing Spring root WebApplicationContext
+14:56:56.454 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+14:56:57.848 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+14:57:00.115 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+14:57:00.912 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+14:57:02.633 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+14:57:02.670 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+14:57:44.141 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+14:57:44.182 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+14:57:44.186 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-31
+14:57:44.210 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:57:44.211 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+14:57:44.212 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+14:57:44.214 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+14:57:44.214 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+14:57:44.214 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+14:57:44.216 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+14:57:44.233 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+14:57:44.239 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+14:57:44.397 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type from ucs_user WHERE ( username = ? and status = ? ) 
+14:57:44.434 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+14:57:44.458 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+14:58:49.994 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type from ucs_user WHERE ( username = ? and status = ? ) 
+14:58:49.994 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+14:58:49.997 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+15:11:32.109 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+15:11:32.475 INFO  /ucs - Initializing Spring root WebApplicationContext
+15:11:35.193 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:11:36.614 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+15:11:39.604 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+15:11:40.532 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+15:11:41.032 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+15:11:41.067 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+15:12:15.741 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+15:12:15.783 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+15:12:15.786 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-30
+15:12:15.808 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:12:15.808 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+15:12:15.810 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+15:12:15.812 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:12:15.812 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+15:12:15.812 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+15:12:15.814 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+15:12:15.830 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+15:12:15.833 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+15:12:15.984 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type from ucs_user WHERE ( username = ? and status = ? ) 
+15:12:16.018 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+15:12:16.039 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+15:13:27.250 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+15:13:27.251 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), OIM(String), 00(String), 01(String), OIM(String)
+15:13:27.327 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 0
+15:14:42.830 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+15:14:42.831 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), OIM(String), 00(String), 01(String), OIM(String)
+15:14:42.832 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 0
+15:14:51.386 DEBUG c.d.u.b.d.U.updateByPrimaryKeySelective - ==>  Preparing: update ucs_user SET password = ?, salt = ? where id = ? 
+15:14:51.387 DEBUG c.d.u.b.d.U.updateByPrimaryKeySelective - ==> Parameters: fe86ce83403d8b38ba8b1726d48a6e4b9ede70a1(String), 83fa89bef8475ea8(String), 00000000000000000000000000000000(String)
+15:15:51.041 DEBUG c.d.u.b.d.U.updateByPrimaryKeySelective - ==>  Preparing: update ucs_user SET password = ?, salt = ? where id = ? 
+15:15:51.041 DEBUG c.d.u.b.d.U.updateByPrimaryKeySelective - ==> Parameters: 1c63987d2d15ab338b6d09877dd98b37dde9b833(String), 579e9ddd905c8ed6(String), 00000000000000000000000000000000(String)
+15:16:45.498 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+15:16:45.865 INFO  /ucs - Initializing Spring root WebApplicationContext
+15:16:48.783 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:16:50.208 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+15:16:52.451 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+15:16:53.348 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+15:16:54.847 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+15:16:54.883 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+15:17:02.665 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+15:17:02.710 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+15:17:02.714 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-31
+15:17:02.737 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:17:02.738 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+15:17:02.740 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+15:17:02.742 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:17:02.742 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+15:17:02.742 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+15:17:02.745 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+15:17:02.762 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+15:17:02.768 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+15:17:14.414 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type from ucs_user WHERE ( username = ? and status = ? ) 
+15:17:14.463 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+15:17:14.486 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+15:17:14.863 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+15:17:14.864 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), OIM(String), 00(String), 01(String), OIM(String)
+15:17:14.866 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 0
+15:17:44.801 DEBUG c.d.u.b.d.U.updateByPrimaryKeySelective - ==>  Preparing: update ucs_user SET password = ?, salt = ? where id = ? 
+15:17:44.802 DEBUG c.d.u.b.d.U.updateByPrimaryKeySelective - ==> Parameters: dd9fa274f731d3f94c04f056c96ca780223d9ad9(String), acbb17acbbceaf0d(String), 00000000000000000000000000000000(String)
+15:17:44.881 DEBUG c.d.u.b.d.U.updateByPrimaryKeySelective - <==    Updates: 1
+15:17:57.932 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type from ucs_user WHERE ( username = ? and status = ? ) 
+15:17:57.933 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+15:17:57.935 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+15:17:58.281 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+15:17:58.282 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), OIM(String), 00(String), 01(String), OIM(String)
+15:17:58.283 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 0
+15:18:10.926 DEBUG c.d.u.b.d.U.updateByPrimaryKeySelective - ==>  Preparing: update ucs_user SET password = ?, salt = ? where id = ? 
+15:18:10.926 DEBUG c.d.u.b.d.U.updateByPrimaryKeySelective - ==> Parameters: 4d06ca71399ae91f73b19a996bf1513526332683(String), 66184bc265e84565(String), 00000000000000000000000000000000(String)
+15:18:10.931 DEBUG c.d.u.b.d.U.updateByPrimaryKeySelective - <==    Updates: 1
