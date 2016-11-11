@@ -111,7 +111,6 @@
 		<property name="filters">
 			<util:map>
 				<entry key="authc" value-ref="authcFilter"/>
-				<entry key="captchaFilter" value-ref="myCaptchaFilter"/>
 			</util:map>
 		</property>
 		<property name="filterChainDefinitions">

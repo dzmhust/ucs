@@ -1,0 +1,150 @@
+/*背景*/
+.bg-gray{
+    background-color:#f3f3f4;
+}
+.bg-white{
+    background-color: #ffffff;
+    opacity:0.8;
+}
+.bg-login{
+    background: url("../images/login-bg.png") no-repeat center fixed;
+    background-size: cover;
+}
+/*form*/
+.form-label{
+    line-height: 34px;
+    margin-bottom:0px;
+}
+.lable-unit{
+    margin-left:-10px;
+}
+/*padding & margin*/
+.no-margin-bottom{
+    margin-bottom: 0px;
+}
+.no-padding{
+    padding: 0;
+}
+.row-no-padding {
+    padding: 0; }
+.row-no-padding > .col {
+    padding: 0; }
+.padding {
+    padding: 10px; }
+.padding-top,
+.padding-vertical {
+    padding-top: 10px; }
+
+.padding-right,
+.padding-horizontal {
+    padding-right: 10px; }
+
+.padding-bottom,
+.padding-vertical {
+    padding-bottom: 10px; }
+
+.padding-left,
+.padding-horizontal {
+    padding-left: 10px; }
+.no-padding-left{
+    padding-left:0px;
+}
+.no-padding-horizontal{
+    padding-left:0px;
+    padding-right: 0px;
+}
+.margin {
+    padding:10px;
+}
+.margin-left{
+    margin-left:10px;
+}
+/*宽度、宽度*/
+.full-width{
+    width: 100% !important;
+}
+.border-bottom{
+    border-bottom: 1px solid #99c3d7;
+}
+/*登录页面*/
+.middle-box{
+    max-width: 400px;
+    z-index: 100;
+    margin: 0 auto;
+}
+.loginscreen .middle-box{
+    width: 300px;
+}
+.login-top{
+    background-color: #3b3127;
+    height: 6px;
+}
+.login-title{
+	height:130px;
+	padding:30px;
+	font-weight:bold;
+}
+.login-header{
+	height:265px;
+}
+.login-logo{
+	margin-top:40px;
+}
+.login-logo-zh,
+.login-logo-en{
+	font-weight:bold;
+	color:#3b3127;
+}
+.login-logo-zh{
+	font-size:45px;
+	font-family:"宋体";
+}
+.login-logo-en{
+	font-size:21px;
+	font-family:"Helvetica";
+}
+/*首页*/
+.homepage-title{
+    height: 46px;
+    background-color: #3b3127;
+}
+.homepage-top-links li{
+    display: inline-block;
+}
+.homepage-top-links li:last-child{
+    margin-right: 30px;
+}
+.homepage-top-links li a{
+    /*padding: 20px 10px;*/
+    min-height: 40px
+}
+.homepage-logo-top{
+    background: url("../images/banner.png") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+}
+.homepage-monitor-bg{
+    background: url("../images/monitor.png") no-repeat center;
+    background-size: cover;
+}
+.homepage-monitor-dash{
+    height:84px;
+    width: 150px;
+}
+/*天气*/
+#current-weather{
+    background: url("../images/weather.png") no-repeat ;
+    background-size: cover;
+    height: 270px;
+    margin:0 -15px;
+}
+#current-weather .row {
+    height: 90px;
+}
+#current-weather span{
+    font-family:"宋体";
+    font-size: 40px;
+}
+#current-weather .row .col{
+    margin-top:15px;
+}

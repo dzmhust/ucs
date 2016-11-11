@@ -5,7 +5,6 @@
 <title>用户中心系统</title>
 <%@ include file="/WEB-INF/views/include/meta.jsp"%>
 <%@ include file="/WEB-INF/views/include/taglib.jsp"%>
-<%@ include file="/WEB-INF/views/include/easyui.jsp"%>
 <script type="text/javascript" src="${ctxResources }/plugins/artTemplate/template.js"></script>
 <link href="${ctxResources}/css/index.css" rel="stylesheet" type="text/css" />
 

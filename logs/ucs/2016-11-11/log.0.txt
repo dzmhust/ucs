@@ -1,0 +1,320 @@
+15:04:21.056 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+15:04:21.504 INFO  /ucs - Initializing Spring root WebApplicationContext
+15:04:24.942 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:04:26.415 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+15:04:26.723 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+15:04:26.727 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: main
+15:04:26.750 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:04:26.751 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+15:04:26.753 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+15:04:26.755 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:04:26.755 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+15:04:26.755 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+15:04:26.755 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutting down.
+15:04:26.755 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED paused.
+15:04:26.756 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED shutdown complete.
+15:04:26.756 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Disabled session validation scheduler.
+15:04:26.791 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+15:04:26.816 WARN  org.eclipse.jetty.webapp.WebAppContext - Failed startup of context o.e.j.w.WebAppContext{/ucs,file:/F:/dzmsoftwork/walle/ucs/ucs/src/main/webapp/},src/main/webapp
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroFilter' defined in file [F:\dzmsoftwork\walle\ucs\ucs\target\classes\spring\spring-shiro.xml]: Cannot create inner bean 'util:map#3cee53dc' of type [org.springframework.beans.factory.config.MapFactoryBean] while setting bean property 'filters'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'util:map#3cee53dc': Cannot resolve reference to bean 'myCaptchaFilter' while setting bean property 'sourceMap' with key [TypedStringValue: value [captchaFilter], target type [null]]; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'myCaptchaFilter' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:313) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:122) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240) ~[spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:687) ~[spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:523) ~[spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:782) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:424) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:774) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:249) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242) ~[jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494) ~[jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at com.dzmsoft.ucs.web.test.QuickStartServer.main(QuickStartServer.java:29) [test-classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'util:map#3cee53dc': Cannot resolve reference to bean 'myCaptchaFilter' while setting bean property 'sourceMap' with key [TypedStringValue: value [captchaFilter], target type [null]]; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'myCaptchaFilter' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedMap(BeanDefinitionValueResolver.java:407) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:165) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:299) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'myCaptchaFilter' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) ~[spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	... 35 common frames omitted
+15:04:26.846 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+15:04:50.170 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+15:04:50.538 INFO  /ucs - Initializing Spring root WebApplicationContext
+15:04:53.301 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:04:54.629 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+15:04:56.563 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+15:04:57.955 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+15:04:59.596 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+15:04:59.631 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+15:05:09.345 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+15:05:09.387 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+15:05:09.391 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-30
+15:05:09.418 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:05:09.419 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+15:05:09.422 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+15:05:09.424 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:05:09.425 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+15:05:09.425 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+15:05:09.428 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+15:05:09.457 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+15:05:09.463 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+15:05:09.692 WARN  org.eclipse.jetty.servlet.ServletHandler - 
+org.apache.jasper.JasperException: /WEB-INF/views/login.jsp(6,1) PWC6117: File "/WEB-INF/views/include/meta.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:81) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:376) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:143) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:398) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:431) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:574) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1652) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:185) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:145) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:212) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.JspPropertyGroupServlet.service(JspPropertyGroupServlet.java:132) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1243) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at com.dzmsoft.framework.base.web.filter.CharFilter.doFilter(CharFilter.java:139) ~[classes/:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+Caused by: org.apache.jasper.JasperException: PWC6117: File "/WEB-INF/views/include/meta.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:92) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:172) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.JspUtil.getInputStream(JspUtil.java:917) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.xmlparser.XMLEncodingDetector.getEncoding(XMLEncodingDetector.java:145) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.determineSyntaxAndEncoding(ParserController.java:381) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:215) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:161) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:394) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	... 81 common frames omitted
+15:05:09.694 WARN  org.eclipse.jetty.servlet.ServletHandler - /ucs/login;JSESSIONID=6de35d70-9f0a-4666-82ad-ec8c9f8d84d5
+org.apache.jasper.JasperException: PWC6117: File "/WEB-INF/views/include/meta.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:92) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:172) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.JspUtil.getInputStream(JspUtil.java:917) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.xmlparser.XMLEncodingDetector.getEncoding(XMLEncodingDetector.java:145) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.determineSyntaxAndEncoding(ParserController.java:381) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:215) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:161) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:394) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:431) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:574) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1652) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:185) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:145) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:212) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.JspPropertyGroupServlet.service(JspPropertyGroupServlet.java:132) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1243) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at com.dzmsoft.framework.base.web.filter.CharFilter.doFilter(CharFilter.java:139) ~[classes/:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+15:08:24.439 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+15:08:24.797 INFO  /ucs - Initializing Spring root WebApplicationContext
+15:08:27.597 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:08:28.879 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+15:08:30.922 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+15:08:32.201 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+15:08:33.719 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+15:08:33.754 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+15:08:40.347 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+15:08:40.401 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+15:08:40.407 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-31
+15:08:40.432 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:08:40.433 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+15:08:40.435 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+15:08:40.436 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:08:40.437 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+15:08:40.437 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+15:08:40.440 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+15:08:40.456 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+15:08:40.461 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+15:08:52.652 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type from ucs_user WHERE ( username = ? and status = ? ) 
+15:08:52.683 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+15:08:52.916 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1

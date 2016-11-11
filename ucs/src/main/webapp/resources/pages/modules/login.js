@@ -1,49 +1,72 @@
-/**
- * 初始加载
- */
-$(function(){
-	formValidate();
-	initActions();
+define(function(require, exports, module) {
+	require('validate');
+	require('md5');
+	//
+	var $ = require('jquery');
+	var toastr = require('toastr');
+	var Ladda = require('ladda');
+	$(function(){
+		init();
+	});
+	function init(){
+		initConfig();
+		initAction();
+	}
+	function initConfig(){
+//		Ladda.bind( 'button', { timeout: 2000 } );
+		$('#loginForm').bootstrapValidator({
+			message : '非法值',
+			feedbackIcons : {
+				valid : 'glyphicon glyphicon-ok',
+				invalid : 'glyphicon glyphicon-remove',
+				validating : 'glyphicon glyphicon-refresh'
+			},
+			fields:{
+				username:{validators:{notEmpty:{message:'用户名不能为空'},stringLength:{min:5,max:20,message:'用户名长度应在5-20位'}}},
+				password:{validators:{notEmpty:{message:'密码不能为空'},stringLength:{min:6,max:20,message:'密码长度应在6-20位'}}},
+				captcha:{validators:{notEmpty:{message:'验证码不能为空'},stringLength:{min:4,max:4,message:'验证码长度不正确'}}}
+			}
+		}).on('success.form.bv',function(e){
+			e.preventDefault();
+			var $form = $(e.target);
+			doLogin($form);
+		});
+	}
+	function initAction(){
+		$('#btnSubmit').on('click',function(e){
+			$('#loginForm').bootstrapValidator('validate');
+		})
+		$('#img_captcha').on('click',function(e){
+			document.getElementById("img_captcha").src=ctxResources + "/images/kaptcha.jpg?t=" + Math.random();  
+		})
+		$("#loginForm input").each(function(){
+			$(this).bind('keypress',function(event){
+		        if(event.keyCode == "13") {
+		        	$('#loginForm').bootstrapValidator('validate');
+		        	return false;
+		        }
+		    });
+		});
+	}
+	function doLogin(form){
+		var md5Pass = hex_md5(hex_md5($("#password").val()));
+		$("#password").val(md5Pass);
+		var process= Ladda.create($('#btnSubmit')[0]);
+		process.start();
+		$.ajax({
+			url:ctx+'/login',
+			type:'post',
+			data:form.serialize(),
+			success:function(resp){
+				if (!resp.success){
+					toastr.error(resp.msg);
+					// 
+					form.data('bootstrapValidator').resetForm(true);
+					$('#img_captcha')[0].click();
+				} else{
+					window.location.href = ctx+'/index';
+				}
+			}
+		}).always(function(){process.stop();});
+	}
 });
-/**
- * 绑定事件
- */
-function initActions(){
-	// 回车事件
-	$("#loginForm input").each(function(){
-		$(this).bind('keypress',function(event){
-	        if(event.keyCode == "13") {
-	        	if ($("#loginForm").validate().form()){
-	        		$("#loginForm").submit();
-	        	}
-	        	return false;
-	        }
-	    });
-	});
-}
-/**
- * 登录校验
- */
-function formValidate(){
-	$("#loginForm").validate({
-		focusInvalid: false,onkeyup: false,
-		submitHandler:function(form){
-			var md5Pass = hex_md5(hex_md5($("#password").val()));
-			$("#password").val(md5Pass);
-			form.submit();
-		},
-		errorPlacement: function(error, element) {
-        	error.appendTo( element.parent() );
-        },
-        rules:{
-        	username:{required:true,minlength:5,maxlength:16}
-        	,password:{required:true,minlength:6,maxlength:32}
-        	,captcha:{required:true,rangelength:[4,4]}
-        },
-        messages:{
-        	username:{required:"帐号不能为空",minlength : $.validator.format("帐号不能少于{0}位"),maxlength : $.validator.format("帐号不能超过{0}位")}
-        	,password:{required: "密码不能为空",minlength : $.validator.format("密码不能少于{0}位"),maxlength : $.validator.format("密码不能超过{0}位")}
-        	,captcha:{required: "验证码不能为空",rangelength: $.validator.format("验证码长度必须为{0}位")}
-        }
-	});
-}
