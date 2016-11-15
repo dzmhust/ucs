@@ -39,11 +39,10 @@
             </div>
         </form>
     </div>
-</body>
-<%@ include file="/WEB-INF/views/include/common-js.jsp"%>
+    <%@ include file="/WEB-INF/views/include/common-js.jsp"%>
 	<!-- 加载js文件 -->
 	<script>
 	require(['login']);
 	</script>
-
+</body>
 </html>

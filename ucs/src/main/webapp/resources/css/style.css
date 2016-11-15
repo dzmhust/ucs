@@ -1,72 +1,8 @@
-/*背景*/
-.bg-gray{
-    background-color:#f3f3f4;
-}
-.bg-white{
-    background-color: #ffffff;
-    opacity:0.8;
-}
+/*登录页面*/
 .bg-login{
-    background: url("../images/login-bg.png") no-repeat center fixed;
+    background: url("../images/login-bg.jpg") no-repeat center fixed;
     background-size: cover;
 }
-/*form*/
-.form-label{
-    line-height: 34px;
-    margin-bottom:0px;
-}
-.lable-unit{
-    margin-left:-10px;
-}
-/*padding & margin*/
-.no-margin-bottom{
-    margin-bottom: 0px;
-}
-.no-padding{
-    padding: 0;
-}
-.row-no-padding {
-    padding: 0; }
-.row-no-padding > .col {
-    padding: 0; }
-.padding {
-    padding: 10px; }
-.padding-top,
-.padding-vertical {
-    padding-top: 10px; }
-
-.padding-right,
-.padding-horizontal {
-    padding-right: 10px; }
-
-.padding-bottom,
-.padding-vertical {
-    padding-bottom: 10px; }
-
-.padding-left,
-.padding-horizontal {
-    padding-left: 10px; }
-.no-padding-left{
-    padding-left:0px;
-}
-.no-padding-horizontal{
-    padding-left:0px;
-    padding-right: 0px;
-}
-.margin {
-    padding:10px;
-}
-.margin-left{
-    margin-left:10px;
-}
-/*宽度、宽度*/
-.full-width{
-    width: 100% !important;
-}
-.border-bottom{
-    border-bottom: 1px solid #99c3d7;
-}
-/*登录页面*/
 .middle-box{
     max-width: 400px;
     z-index: 100;

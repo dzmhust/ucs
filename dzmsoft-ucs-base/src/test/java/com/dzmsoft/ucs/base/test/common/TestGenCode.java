@@ -7,9 +7,10 @@ import com.dzmsoft.framework.gencode.common.GenCodeConstant;
 import com.dzmsoft.framework.gencode.handle.GenCodeHandler;
 import com.dzmsoft.framework.gencode.param.GenCodeCfg;
 import com.dzmsoft.framework.gencode.param.VmParams;
-import com.dzmsoft.framework.gencode.param.dto.CodeType;
+import com.dzmsoft.framework.gencode.param.dto.CodeTypeEnum;
 import com.dzmsoft.framework.gencode.param.dto.JDBCConnectionConfiguration;
-import com.dzmsoft.framework.gencode.param.dto.StrategyType;
+import com.dzmsoft.framework.gencode.param.dto.StrategyTypeEnum;
+import com.dzmsoft.framework.gencode.param.dto.UiTypeEnum;
 import com.dzmsoft.ucs.base.pojo.UcsDomain;
 import com.dzmsoft.ucs.base.pojo.UcsPermission;
 import com.dzmsoft.ucs.base.pojo.UcsRole;
@@ -52,14 +53,16 @@ public class TestGenCode {
             .build();
         // 生成代码的配置
         GenCodeCfg genCodeCfg = new GenCodeCfg.Builder()
-            .setStrategyType(StrategyType.Common)
+            .setUiType(UiTypeEnum.bootstrap)
+            .setStrategyType(StrategyTypeEnum.Common)
             .setVmParams(vmParams)
 //            .addAllFlat()
-            .addCodeType(CodeType.FlatController)
-            .addCodeType(CodeType.FlatService)
-            .addCodeType(CodeType.FlatServiceImpl)
-//            .addCodeType(CodeType.FlatListJs)
-//            .addCodeType(CodeType.FlatFormJsp)
+//            .addCodeType(CodeTypeEnum.FlatController)
+//            .addCodeType(CodeTypeEnum.FlatService)
+//            .addCodeType(CodeTypeEnum.FlatServiceImpl)
+            .addCodeType(CodeTypeEnum.FlatListJs)
+            .addCodeType(CodeTypeEnum.FlatFormJsp)
+//            .addCodeType(CodeTypeEnum.FlatListJsp)
             .build();
         // 生成代码
         GenCodeHandler handler = GenCodeHandler.getInstance();
@@ -77,10 +80,10 @@ public class TestGenCode {
             .build();
         // 生成代码的配置
         GenCodeCfg genCodeCfg = new GenCodeCfg.Builder()
-            .setStrategyType(StrategyType.Common)
+            .setStrategyType(StrategyTypeEnum.Common)
             .setVmParams(vmParams)
-            .addCodeType(CodeType.FlatDialogJs)
-            .addCodeType(CodeType.FlatDialogJsp)
+            .addCodeType(CodeTypeEnum.FlatDialogJs)
+            .addCodeType(CodeTypeEnum.FlatDialogJsp)
             .build();
         // 生成代码
         GenCodeHandler handler = GenCodeHandler.getInstance();
@@ -97,7 +100,7 @@ public class TestGenCode {
             .build();
         // 生成代码的配置
         GenCodeCfg genCodeCfg = new GenCodeCfg.Builder()
-            .setStrategyType(StrategyType.Common)
+            .setStrategyType(StrategyTypeEnum.Common)
             .setVmParams(vmParams)
             .addAllTree()
             .build();
@@ -116,11 +119,11 @@ public class TestGenCode {
             .build();
         // 生成代码的配置
         GenCodeCfg genCodeCfg = new GenCodeCfg.Builder()
-            .setStrategyType(StrategyType.Common)
+            .setStrategyType(StrategyTypeEnum.Common)
             .setVmParams(vmParams)
 //            .addAllFlat()
-            .addCodeType(CodeType.FlatService)
-             .addCodeType(CodeType.FlatServiceImpl)
+            .addCodeType(CodeTypeEnum.FlatService)
+             .addCodeType(CodeTypeEnum.FlatServiceImpl)
             .build();
         // 生成代码
         GenCodeHandler handler = GenCodeHandler.getInstance();
@@ -141,7 +144,7 @@ public class TestGenCode {
             .build();
         // 生成代码的配置
         GenCodeCfg genCodeCfg = new GenCodeCfg.Builder()
-            .setStrategyType(StrategyType.LeftRight)
+            .setStrategyType(StrategyTypeEnum.LeftRight)
             .setVmParams(vmParams)
            .addAllLR()
             .build();
@@ -164,7 +167,7 @@ public class TestGenCode {
             .build();
         // 生成代码的配置
         GenCodeCfg genCodeCfg = new GenCodeCfg.Builder()
-            .setStrategyType(StrategyType.OrderItem)
+            .setStrategyType(StrategyTypeEnum.OrderItem)
             .setVmParams(vmParams)
             .addAllOrderItemCodeType()
             .build();

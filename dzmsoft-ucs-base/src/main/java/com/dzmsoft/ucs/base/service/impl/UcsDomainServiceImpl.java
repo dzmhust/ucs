@@ -10,6 +10,7 @@ import com.dzmsoft.ucs.base.pojo.UcsDomain;
 import com.dzmsoft.ucs.base.pojo.UcsDomainExample;
 import com.dzmsoft.ucs.base.dao.UcsDomainMapper;
 import com.dzmsoft.ucs.base.service.UcsDomainService;
+import com.dzmsoft.framework.base.util.CheckEmptyUtil;
 import com.dzmsoft.framework.base.util.StringUtil;
 /**
  * Copyright (C), dzmsoft Co., Ltd
@@ -54,9 +55,10 @@ public class UcsDomainServiceImpl implements UcsDomainService{
      */
     @Transactional(readOnly = false)
     @Override
-	public int insertSelective(UcsDomain record){
+	public boolean insertSelective(UcsDomain record){
 				record.setId(StringUtil.getUuidString());
-				return ucsDomainMapper.insertSelective(record);
+				int flag = ucsDomainMapper.insertSelective(record);
+		return flag>0?true:false;
 	}
 	
 	/**
@@ -92,8 +94,9 @@ public class UcsDomainServiceImpl implements UcsDomainService{
      */
     @Transactional(readOnly = false)
     @Override
-	public int updateByPrimaryKeySelective(UcsDomain record){
-		return ucsDomainMapper.updateByPrimaryKeySelective(record);
+	public boolean updateByPrimaryKeySelective(UcsDomain record){
+		int flag = ucsDomainMapper.updateByPrimaryKeySelective(record);
+		return flag>0?true:false;
 	}
 	
 	/**
@@ -102,9 +105,9 @@ public class UcsDomainServiceImpl implements UcsDomainService{
      */
     @Transactional(readOnly = false)
     @Override
-	public int updateByExampleSelective(UcsDomain record,
-			UcsDomainExample example){
-		return ucsDomainMapper.updateByExampleSelective(record, example);
+	public boolean updateByExampleSelective(UcsDomain record,UcsDomainExample example){
+		int flag = ucsDomainMapper.updateByExampleSelective(record, example);
+		return flag>0?true:false;
 	}
 	
 	/**
@@ -113,8 +116,9 @@ public class UcsDomainServiceImpl implements UcsDomainService{
      */
     @Transactional(readOnly = false)
     @Override
-	public int deleteByPrimaryKey(String id){
-		return ucsDomainMapper.deleteByPrimaryKey(id);
+	public boolean deleteByPrimaryKey(String id){
+		int flag = ucsDomainMapper.deleteByPrimaryKey(id);
+		return flag>0?true:false;
 	}
 	
 	/**
@@ -125,8 +129,27 @@ public class UcsDomainServiceImpl implements UcsDomainService{
 	 */
 	@Transactional(readOnly = false)
 	@Override
-	public int deleteByExample(UcsDomainExample example){
-		return ucsDomainMapper.deleteByExample(example);
+	public boolean deleteByExample(UcsDomainExample example){
+		int flag = ucsDomainMapper.deleteByExample(example);
+		return flag>0?true:false;
 	}
 	
-	}
+		
+	/**
+	 * 批量删除
+	 * @dzmsoftgenerated 
+	 * @param id
+	 * @return
+	 */
+	@Transactional(readOnly = false)
+    @Override
+    public boolean deleteBatchByPrimaryKeys(List<String> idList) {
+        if (CheckEmptyUtil.isEmpty(idList)){
+            return true;
+        }
+        UcsDomainExample example = new UcsDomainExample();
+        UcsDomainExample.Criteria criteria = example.createCriteria();
+        criteria.andIdIn(idList);
+        return deleteByExample(example);
+    }
+}

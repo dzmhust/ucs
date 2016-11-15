@@ -47,6 +47,19 @@ public class UcsUserServiceImpl implements UcsUserService {
     
     @Transactional(readOnly = false)
     @Override
+    public boolean deleteBatchByPrimaryKeys(List<String> idList) {
+        if (CheckEmptyUtil.isEmpty(idList)){
+            return true;
+        }
+        UcsUserExample example = new UcsUserExample();
+        UcsUserExample.Criteria criteria = example.createCriteria();
+        criteria.andIdIn(idList);
+        int flag = deleteByExample(example);
+        return flag>0?true:false;
+    }
+    
+    @Transactional(readOnly = false)
+    @Override
     public int updatePwd(String id, String password) {
         //
         UcsUser record = new UcsUser();

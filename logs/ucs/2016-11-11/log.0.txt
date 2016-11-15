@@ -318,3 +318,30 @@ org.apache.jasper.JasperException: PWC6117: File "/WEB-INF/views/include/meta.js
 15:08:52.652 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type from ucs_user WHERE ( username = ? and status = ? ) 
 15:08:52.683 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
 15:08:52.916 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+15:20:58.818 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+15:20:59.195 INFO  /ucs - Initializing Spring root WebApplicationContext
+15:21:02.023 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:21:03.338 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+15:21:05.268 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+15:21:06.387 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+15:21:08.021 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+15:21:08.057 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+15:21:17.421 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+15:21:17.466 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+15:21:17.470 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-29
+15:21:17.492 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:21:17.493 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+15:21:17.494 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+15:21:17.496 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:21:17.496 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+15:21:17.496 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+15:21:17.499 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+15:21:17.512 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+15:21:17.517 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.

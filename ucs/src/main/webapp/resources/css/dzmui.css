@@ -1,0 +1,297 @@
+/*导航栏*/
+.nav > li > a {
+    color: #a7b1c2;
+    font-weight: 600;
+    padding: 14px 20px 14px 25px
+}
+.nav li > a {
+    display: block
+}
+.nav.navbar-right > li > a {
+    color: #999c9e
+}
+.nav > li.active > a {
+    color: #fff
+}
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background: #fff
+}
+.nav > li > a i {
+    margin-right: 6px
+}
+.nav > li.active {
+    border-left: 4px solid #19aa8d;
+    background: #293846
+}
+.nav.nav-second-level > li.active {
+    border: none
+}
+.nav.nav-second-level.collapse[style] {
+    height: auto !important
+}
+.nav-second-level li, .nav-third-level li {
+    border-bottom: none !important
+}
+
+.nav-second-level li a {
+    padding: 7px 15px 7px 10px;
+    padding-left: 52px
+}
+
+.nav-third-level li a {
+    padding-left: 62px
+}
+
+.nav-second-level li:last-child {
+    margin-bottom: 10px
+}
+.arrow {
+    float: right;
+    margin-top: 2px
+}
+.fa.arrow:before {
+    content: "\f104"
+}
+.active > a > .fa.arrow:before {
+    content: "\f107"
+}
+.navbar {
+    border: 0
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: #2f4050;
+    position: relative
+}
+.navbar-default .nav > li > a:focus, .navbar-default .nav > li > a:hover {
+    background-color: #293846;
+    color: #fff
+}
+.nav-header {
+    padding: 33px 25px;
+    background: url(../images/header-profile.png) no-repeat
+}
+.nav-header a {
+    color: #DFE4ED
+}
+
+.nav-header .text-muted {
+    color: #8095a8
+}
+/*内部部分的页签*/
+.content-tabs{
+    position: relative;
+    height: 42px;
+    background: #fafafa;
+    line-height: 40px;
+}
+.content-tabs .roll-nav, .page-tabs-list {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #999;
+    z-index: 2;
+    top: 0
+}
+.content-tabs .roll-nav:hover, .page-tabs a:hover {
+    color: #777;
+    background: #f2f2f2;
+    cursor: pointer
+}
+.content-tabs .roll-left {
+    left: 0;
+    border-right: solid 1px #eee
+}
+.content-tabs .roll-right {
+    right: 0;
+    border-left: solid 1px #eee
+}
+.content-tabs button:hover {
+    background: #fafafa
+}
+.content-tabs button {
+    background: #fff;
+    border: 0;
+    height: 40px;
+    width: 40px;
+    outline: 0
+}
+nav.page-tabs {
+    margin-left: 40px;
+    width: 100000px;
+    height: 40px;
+    overflow: hidden
+}
+nav.page-tabs .page-tabs-content {
+    float: left
+}
+.page-tabs a {
+    display: block;
+    float: left;
+    border-right: solid 1px #eee;
+    padding: 0 15px
+}
+.page-tabs a i:hover {
+    color: #c00
+}
+.page-tabs a {
+    color: #999
+}
+
+.page-tabs a i {
+    color: #ccc
+}
+
+.page-tabs a.active {
+    background: #2f4050;
+    color: #a7b1c2
+}
+
+.page-tabs a.active i:hover, .page-tabs a.active:hover {
+    background: #293846;
+    color: #fff
+}
+.content-tabs .roll-nav:hover, .page-tabs a:hover {
+    color: #777;
+    background: #f2f2f2;
+    cursor: pointer
+}
+.roll-right.tab-right {
+    right: 140px
+}
+.roll-right.btn-group {
+    right: 60px;
+    width: 80px;
+    padding: 0
+}
+.roll-right.btn-group button {
+    width: 80px
+}
+.roll-right.tab-exit {
+    background: #fff;
+    height: 40px;
+    width: 60px;
+    outline: 0
+}
+.J_menuTab {
+    -webkit-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+#content-main {
+    height: calc(100% - 140px);
+    overflow: hidden
+}
+/*页面总体布局布局*/
+body {
+    font-family: "open sans", "Helvetica Neue", Helvetica,"微软雅黑", Arial, sans-serif;
+    font-size: 13px;
+    color: #676a6c;
+    overflow-x: hidden
+}
+body, body.full-height-layout #wrapper, body.full-height-layout #page-wrapper, html {
+    height: 100%;
+}
+#wrapper{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #2f4050;
+}
+#page-wrapper {
+    padding: 0 15px;
+    position: inherit;
+    margin: 0 0 0 220px;
+    min-height: auto
+}
+body.fixed-sidebar .navbar-static-side{
+    position: fixed;
+    width: 220px;
+    z-index: 2001;
+    height: 100%
+}
+/*padding*/
+.no-padding{
+    padding: 0;
+}
+.row-no-padding {
+    padding: 0; }
+.row-no-padding > .col {
+    padding: 0; }
+.padding {
+    padding: 10px; }
+.padding-top,
+.padding-vertical {
+    padding-top: 10px; }
+
+.padding-right,
+.padding-horizontal {
+    padding-right: 10px; }
+
+.padding-bottom,
+.padding-vertical {
+    padding-bottom: 10px; }
+
+.padding-left,
+.padding-horizontal {
+    padding-left: 10px; }
+.no-padding-left{
+    padding-left:0px;
+}
+.no-padding-horizontal{
+    padding-left:0px;
+    padding-right: 0px;
+}
+/*margin*/
+.no-margin-bottom{
+    margin-bottom: 0px;
+}
+.margin {
+    padding:10px;
+}
+.margin-left{
+    margin-left:10px;
+}
+.margin-top{
+    margin-top:10px;
+}
+/*背景*/
+.bg-gray{
+    background-color:#f3f3f4;
+}
+.bg-white{
+    background-color: #ffffff;
+    opacity:0.8;
+}
+/*form*/
+.form-label{
+    line-height: 34px;
+    margin-bottom:0px;
+}
+.lable-unit{
+    margin-left:-10px;
+}
+/*块级元素*/
+.block{
+    display: block;
+}
+.clear {
+    display: block;
+    overflow: hidden
+}
+.full-width{
+    width: 100% !important;
+}
+.border-bottom{
+    border-bottom: 1px solid #99c3d7;
+}
+/*链接*/
+a:focus {
+    outline: 0
+}
+a {
+    cursor: pointer
+}
+
+a:focus, a:hover {
+    text-decoration: none
+}

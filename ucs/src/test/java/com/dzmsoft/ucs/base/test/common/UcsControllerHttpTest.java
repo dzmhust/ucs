@@ -1,6 +1,7 @@
 package com.dzmsoft.ucs.base.test.common;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.junit.Test;
@@ -8,6 +9,8 @@ import org.junit.Test;
 import com.dzmsoft.framework.base.util.HttpUtil;
 import com.dzmsoft.framework.base.util.StringUtil;
 import com.dzmsoft.framework.base.util.security.DigestsUtil;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 public class UcsControllerHttpTest {
 
@@ -51,4 +54,5 @@ public class UcsControllerHttpTest {
         String result = HttpUtil.doGet(uri, params);
         System.out.println(result);
     }
+    
 }

@@ -1,57 +1,56 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<%@ include file="/WEB-INF/views/include/meta.jsp"%>
-	<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
-	<%@ include file="/WEB-INF/views/include/easyui.jsp"%>
-</head>
-<body>
-	<form id="mainform" action="${ctx }/ucsUser/${action}" method="post">
-		<table class="formTable" width="100%" border="0" cellspacing="0" cellpadding="5" >
-			<tr>
-				<td style="width:25%;text-align:right">用户帐号：</td>
-				<td width="75%">
-					<input type="hidden" name="id" value="${ucsUser.id }"/>
-					<input name="username" class="easyui-textbox" data-options="required:true" value="${ucsUser.username }" style="width:90%"> 
-				</td>
-			</tr>
-			<c:if test="${action == 'add'}">
-			<tr >
-				<td style="width:25%;text-align:right">密码：</td>
-				<td width="75%"><input style="width:90%" id="plainPassword" name="password" type="password" autocomplete="off" class="easyui-textbox" data-options="required:true,validType:'length[6,20]'"/></td>
-			</tr>
-			<tr>
-				<td style="width:25%;text-align:right">确认密码：</td>
-				<td width="75%"><input style="width:90%" type="password" autocomplete="off" class="easyui-textbox" data-options="required:true,validType:'equals[$(\'#plainPassword\').val()]'"/></td>
-			</tr>	
-			</c:if>
-			<tr>
-				<td style="width:25%;text-align:right">用户实名：</td>
-				<td width="75%">
-					<input name="name" style="width:90%" class="easyui-textbox" data-options="required:true" value="${ucsUser.name }"> 
-				</td>
-			</tr>
-			<tr>
-				<td style="width:25%;text-align:right">联系电话：</td>
-				<td width="75%">
-					<input name="phone" style="width:90%" class="easyui-textbox" data-options="required:true,validType:'mobile'" value="${ucsUser.phone }"> 
-				</td>
-			</tr>
-			<tr>
-				<td style="width:25%;text-align:right">电子邮箱：</td>
-				<td width="75%">
-					<input type="text" name="email" style="width:90%" class="easyui-textbox" data-options="required:true,validType:'email'" value="${ucsUser.email }"> 
-				</td>
-			</tr>
-			<tr>
-				<td style="width:25%;text-align:right">描述：</td>
-				<td width="75%">
-					<textarea id="description" name="description" style="width:90%;height:100px;">${ucsUser.description}</textarea>
-				</td>
-			</tr>
-		</table>
+<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+<div class="container-fluid">
+	<form id="main-form" action="${ctx }/ucsUser/${action}" class="form-horizontal margin-top">
+		<div>
+			<input type="hidden" name="id" value="${ucsUser.id }" />
+		</div>
+		<div class="form-group">
+            <label class="col-xs-3 text-right control-label form-label">用户帐号:</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control no-padding" name="username" value="${ucsUser.username }" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-xs-3 text-right control-label form-label">用户实名:</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control no-padding" name="name" value="${ucsUser.name }" required />
+            </div>
+        </div>
+        <c:if test="${action == 'add'}">
+        <div class="form-group">
+            <label class="col-xs-3 text-right control-label form-label">密码:</label>
+            <div class="col-xs-9">
+                <div class="input-group">
+                	<span class="input-group-btn"><button type="button" class="btn btn-default" id="btnPassword"><i class="fa fa-eye-slash" id="iEye"></i></button></span>
+                    <input type="password" class="form-control no-padding" id="password" name="password" value="${ucsUser.password }" autocomplete="off" required />
+                </div>
+            </div>
+        </div>
+        </c:if>
+        <div class="form-group">
+            <label class="col-xs-3 text-right control-label form-label">联系电话:</label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control no-padding" name="phone" value="${ucsUser.phone }" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-xs-3 text-right control-label form-label">电子邮箱:</label>
+            <div class="col-xs-9">
+                <input type="email" class="form-control no-padding" name="email" value="${ucsUser.email }"  />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-xs-3 text-right control-label form-label">描述:</label>
+            <div class="col-xs-9">
+            	<textarea id="description" class="form-control no-padding" name="description" style="width:100%;height:100px;">${ucsUser.description}</textarea>
+            </div>
+        </div>
+        <div class="">
+            <div class="btn-group-sm text-center">
+                <button class="btn btn-primary" type="button" id="btnSave">保存</button>
+                <button class="btn btn-white" type="button" id="btnCancel">取消</button>
+            </div>
+        </div>
 	</form>
-</body>
-</html>	
+</div>

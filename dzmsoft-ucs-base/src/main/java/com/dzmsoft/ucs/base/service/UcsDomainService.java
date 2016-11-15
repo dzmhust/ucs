@@ -31,7 +31,7 @@ public interface UcsDomainService {
      * 根据条件插入记录
      * @dzmsoftgenerated 
      */
-	int insertSelective(UcsDomain record);
+	boolean insertSelective(UcsDomain record);
 	
 	/**
      * 根据主键查询记录
@@ -55,20 +55,20 @@ public interface UcsDomainService {
      * 根据主键更新记录
      * @dzmsoftgenerated 
      */
-	int updateByPrimaryKeySelective(UcsDomain record);
+	boolean updateByPrimaryKeySelective(UcsDomain record);
 	
 	/**
      * 根据查询条件更新记录
      * @dzmsoftgenerated 
      */
-	int updateByExampleSelective(UcsDomain record,
+	boolean updateByExampleSelective(UcsDomain record,
 			UcsDomainExample example);
 	
 	/**
      * 根据主键生成记录
      * @dzmsoftgenerated 
      */
-	int deleteByPrimaryKey(String id);
+	boolean deleteByPrimaryKey(String id);
 	
 	/**
 	 * 根据条件删除字段信息
@@ -76,8 +76,16 @@ public interface UcsDomainService {
 	 * @param example
 	 * @return
 	 */
-	int deleteByExample(UcsDomainExample example);
+	boolean deleteByExample(UcsDomainExample example);
 	
 		
+	/**
+	 * 批量删除
+	 * @dzmsoftgenerated 
+	 * @param idList id清单
+	 * @return
+	 */
+	boolean deleteBatchByPrimaryKeys(List<String> idList);
+	
 	
 }

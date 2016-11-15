@@ -13,7 +13,6 @@ define(function(require, exports, module) {
 		initAction();
 	}
 	function initConfig(){
-//		Ladda.bind( 'button', { timeout: 2000 } );
 		$('#loginForm').bootstrapValidator({
 			message : '非法值',
 			feedbackIcons : {

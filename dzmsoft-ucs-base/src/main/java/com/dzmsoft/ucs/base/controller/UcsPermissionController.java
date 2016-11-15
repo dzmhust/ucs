@@ -45,7 +45,7 @@ public class UcsPermissionController extends BaseController{
 
 	@RequestMapping(value="getMenus", method = RequestMethod.GET)
     @ResponseBody
-    public List<UcsPermission> getMenus(String id){
+    public List<UcsPermission> getMenus(){
         List<UcsPermission> ucsPermissions = ucsPermissionService.selectMenusByUser(((ShiroUser)UserUtil.getCurrentShiroUser()).getId(), domain);
         return ucsPermissions;
     }

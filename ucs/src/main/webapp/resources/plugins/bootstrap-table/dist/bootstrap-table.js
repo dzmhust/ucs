@@ -1939,6 +1939,7 @@
             };
 
             if (this.options.pagination) {
+            	params.pageNumber = this.options.pageNumber;// add by dzm at 2016-11-15
                 params.offset = this.options.pageSize === this.options.formatAllRows() ?
                     0 : this.options.pageSize * (this.options.pageNumber - 1);
                 params.limit = this.options.pageSize === this.options.formatAllRows() ?

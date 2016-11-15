@@ -15,6 +15,12 @@ import com.dzmsoft.ucs.base.pojo.UcsUserExample;
  */
 public interface UcsUserService {
     /**
+     * 批量删除数据
+     * @param idList
+     * @return
+     */
+    boolean deleteBatchByPrimaryKeys(List<String> idList);
+    /**
      * 修改用户名、密码
      * @param username
      * @param password
