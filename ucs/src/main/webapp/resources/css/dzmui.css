@@ -174,12 +174,12 @@ nav.page-tabs .page-tabs-content {
     width: 60px;
     outline: 0
 }
-.J_menuTab {
+.menu-tab {
     -webkit-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s
 }
 #content-main {
-    height: calc(100% - 140px);
+    height: calc(100% - 80px);
     overflow: hidden
 }
 /*页面总体布局布局*/
@@ -262,6 +262,10 @@ body.fixed-sidebar .navbar-static-side{
     background-color: #ffffff;
     opacity:0.8;
 }
+/*列表*/
+.grid-height{
+	
+}
 /*form*/
 .form-label{
     line-height: 34px;
@@ -284,6 +288,13 @@ body.fixed-sidebar .navbar-static-side{
 .border-bottom{
     border-bottom: 1px solid #99c3d7;
 }
+/*input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+input[type="number"]{-moz-appearance:textfield;}
 /*链接*/
 a:focus {
     outline: 0
@@ -294,4 +305,21 @@ a {
 
 a:focus, a:hover {
     text-decoration: none
+}
+/*滚动条*/
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999
+}
+/*校验控制*/
+.form-horizontal .has-feedback.spinner .form-control-feedback {
+	right:35px;
 }

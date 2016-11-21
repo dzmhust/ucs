@@ -29,7 +29,7 @@ import com.dzmsoft.ucs.base.pojo.UcsDomainExample;
 import com.dzmsoft.ucs.base.service.UcsDomainService;
 import com.github.miemiedev.mybatis.paginator.domain.PageBounds;
 import com.github.miemiedev.mybatis.paginator.domain.PageList;
-
+														
 /**
  * Copyright (C), dzmsoft Co., Ltd
  * @author 
@@ -80,6 +80,7 @@ public class UcsDomainController extends BaseController{
 	@RequestMapping(value = "add", method = RequestMethod.GET)
 	public String addForm(Model model){
 		UcsDomain ucsDomain = new UcsDomain();
+		ucsDomain.setStatus("02");
 				model.addAttribute("ucsDomain", ucsDomain);
 		model.addAttribute("action", "add");
 		return "modules/base/ucsDomainForm";

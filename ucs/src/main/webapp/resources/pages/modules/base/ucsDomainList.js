@@ -2,13 +2,15 @@
  * Copyright (C), dzmsoft Co., Ltd
  */
 define(function(require, exports, module) {
-	// 引入js和css区域
+									// 引入js和css区域
 	require('layer');
 	require('validate_zh');
 	require('bootstrap_table_zh');
 	require('jdirk');
 	require('md5');
+	require('chosen');
 	var $ = require('jquery');
+	require('touchspin');
 	var toastr = require('toastr');
 	var Ladda = require('ladda');
 	var constant = require('constant');
@@ -65,13 +67,39 @@ define(function(require, exports, module) {
      * 初始化form配置
      */
     function initFormConfig(layero){
+    	initStatus();
 		initMainForm(layero);
 		initMainFormAction(layero);
+    }
+    /**
+     * 初始化状态
+     */
+    function initStatus(){
+    	 $.ajax({
+            url : ctx + '/ccsDataDictionary/selectByType/0002',
+	        cache : false, 
+	        async : false,
+	        type : "get",
+	        success : function (data,textStatus){
+	        	if (data.success){
+	        		$.each(data.data,function(index,value){
+	        			$("#status").append("<option value='"+value.valueField+"'>"+value.displayField+"</option>");
+	        		})
+		            $("#status").trigger('chosen:updated');
+				} else{
+					layer.alert(data.msg,{title:'系统提示',icon:2,time:1000});
+				}
+	        }
+        })
     }
     /**
      * 初始化form
      */
     function initMainForm(layero){
+    	$('#status').val($('#status').data('value'));
+    	$("#id").trigger("chosen:updated");
+    	//
+		$('input[name="sort"]').TouchSpin({verticalbuttons:true});
     	mainForm = $('#main-form');
     	mainForm.bootstrapValidator({
 			message : '非法值',

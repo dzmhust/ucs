@@ -5,7 +5,7 @@ import com.github.miemiedev.mybatis.paginator.domain.PageBounds;
 import com.github.miemiedev.mybatis.paginator.domain.PageList;
 import com.dzmsoft.ucs.base.pojo.UcsDomain;
 import com.dzmsoft.ucs.base.pojo.UcsDomainExample;
-
+														
 /**
  * Copyright (C), dzmsoft Co., Ltd
  * @author 

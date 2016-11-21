@@ -1,7 +1,7 @@
 requirejs.config({
 	baseUrl:ctxResources+'/pages/modules',
-	urlArgs: "v=" +  (new Date()).getTime(),//禁止缓存，生产环境去除
-//	urlArgs:'v=2016111507',
+//	urlArgs: "v=" +  (new Date()).getTime(),//禁止缓存，生产环境去除
+	urlArgs:'v=2016112101',
     paths:{
       jquery:["../../plugins/jquery/jquery"],
       jdirk:["../../plugins/jquery/jquery.jdirk.min"],
@@ -18,7 +18,10 @@ requirejs.config({
       slimscroll:["../../plugins/slimscroll/jquery.slimscroll.min"],
       bootstrap_table:["../../plugins/bootstrap-table/dist/bootstrap-table"],
       bootstrap_table_zh:["../../plugins/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min"],
-      constant:["../../plugins/udf/constant"]
+      constant:["../../plugins/udf/constant"],
+      touchspin:["../../plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min"],
+      util:["../../plugins/udf/util"],
+      chosen:["../../plugins/chosen/chosen.jquery.min"]
     },
     shim:{
     	jdirk:{deps: ["jquery"],exports: 'jdirk'},
@@ -33,7 +36,9 @@ requirejs.config({
         metisMenu:{deps:["jquery"],exports:'metisMenu'},
         slimscroll:{deps:["jquery"],exports:"slimscroll"},
         bootstrap_table:{deps:["jquery"],exports:"bootstrap_table"},
-        bootstrap_table_zh:{deps:["jquery","bootstrap_table","css!../../plugins/bootstrap-table/dist/bootstrap-table.min.css"],exports:"bootstrap_table_zh"}
+        bootstrap_table_zh:{deps:["jquery","bootstrap_table","css!../../plugins/bootstrap-table/dist/bootstrap-table.min.css"],exports:"bootstrap_table_zh"},
+        touchspin:{deps:["jquery","css!./../../plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css"]},
+        chosen:{deps:["jquery","css!./../../plugins/chosen/chosen.min.css"]}
     },
     map:{
         '*':{

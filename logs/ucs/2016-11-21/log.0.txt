@@ -1,0 +1,258 @@
+15:07:24.887 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+15:07:25.629 INFO  /ucs - Initializing Spring root WebApplicationContext
+15:07:31.314 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:07:33.138 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+15:07:34.808 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+15:07:37.183 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+15:07:38.900 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+15:07:39.024 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+15:09:23.373 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+15:09:23.456 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+15:09:23.460 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1147580192-32
+15:09:23.485 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:09:23.486 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+15:09:23.488 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+15:09:23.489 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+15:09:23.489 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+15:09:23.489 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+15:09:23.491 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+15:09:23.518 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+15:09:23.529 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+15:09:31.734 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user WHERE ( username = ? and status = ? ) 
+15:09:31.766 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+15:09:31.909 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+15:09:32.791 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+15:09:32.792 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+15:09:32.939 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+15:09:34.838 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsUser.status = ? and ucsPermission.type = ? ) 
+15:09:34.838 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), 02(String)
+15:09:34.849 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 16
+15:09:35.566 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+15:09:35.567 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+15:09:35.595 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+15:09:41.092 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+15:09:41.092 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+15:09:41.116 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+15:32:49.101 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ?, ? 
+15:32:49.102 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer), 20(Integer)
+15:32:49.111 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+15:32:49.619 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ?, ? 
+15:32:49.619 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 40(Integer), 20(Integer)
+15:32:49.625 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 6
+15:32:50.299 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+15:32:50.299 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+15:32:50.304 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+15:42:39.518 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+15:42:39.519 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+15:42:39.522 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+15:42:41.889 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+15:42:41.890 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+15:42:41.892 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+15:44:20.707 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+15:44:20.708 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+15:44:20.711 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+15:44:23.029 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+15:44:23.030 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+15:44:23.032 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+15:46:54.081 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+15:46:54.091 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+15:46:54.093 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+15:46:56.053 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+15:46:56.054 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+15:46:56.055 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:24:57.271 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user WHERE ( username = ? and status = ? ) 
+16:24:57.272 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+16:24:57.274 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+16:24:57.427 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:24:57.428 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:24:57.433 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:25:21.615 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:25:21.615 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:25:21.617 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:26:08.852 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:26:08.852 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:26:08.856 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:26:12.449 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+16:26:12.449 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+16:26:12.455 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+16:26:13.321 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:26:13.321 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:26:13.323 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:26:33.391 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:26:33.392 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:26:33.393 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:26:36.315 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:26:36.315 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:26:36.316 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:27:01.813 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+16:27:02.360 INFO  /ucs - Initializing Spring root WebApplicationContext
+16:27:05.975 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:27:07.574 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+16:27:09.255 INFO  net.sf.ehcache.util.UpdateChecker - New update(s) found: 2.6.5 [http://www.terracotta.org/confluence/display/release/Release+Notes+Ehcache+Core+2.6]. Please check http://ehcache.org for the latest version.
+16:27:11.368 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+16:27:13.260 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+16:27:13.386 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+16:27:18.443 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+16:27:18.513 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+16:27:18.516 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-31
+16:27:18.533 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:27:18.534 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+16:27:18.535 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+16:27:18.536 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+16:27:18.536 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+16:27:18.536 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+16:27:18.537 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+16:27:18.548 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+16:27:18.552 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+16:27:27.998 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user WHERE ( username = ? and status = ? ) 
+16:27:28.029 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+16:27:28.050 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+16:27:28.819 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:27:28.821 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:27:28.825 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:27:32.568 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsUser.status = ? and ucsPermission.type = ? ) 
+16:27:32.568 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), 02(String)
+16:27:32.580 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 16
+16:27:33.229 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:27:33.231 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:27:33.233 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:27:48.849 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:27:48.850 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:27:48.852 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:27:51.432 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:27:51.432 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:27:51.434 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:27:51.527 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:27:51.527 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:27:51.529 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:28:21.052 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:28:21.053 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:28:21.055 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:28:23.299 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:28:23.300 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:28:23.301 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:28:24.887 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:28:24.888 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:28:24.890 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:28:54.783 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:28:54.784 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:28:54.786 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:28:57.375 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:28:57.376 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:28:57.377 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:28:59.898 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:28:59.898 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:28:59.900 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:32:05.651 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:32:05.651 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:32:05.653 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:32:07.911 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:32:07.912 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:32:07.913 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:32:09.283 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:32:09.284 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:32:09.286 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:32:30.849 DEBUG c.d.u.b.d.U.selectByPrimaryKey - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain where id = ? 
+16:32:30.850 DEBUG c.d.u.b.d.U.selectByPrimaryKey - ==> Parameters: CS1(String)
+16:32:30.851 DEBUG c.d.u.b.d.U.selectByPrimaryKey - <==      Total: 1
+16:32:30.884 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:32:30.884 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:32:30.886 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:33:13.041 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by status desc limit ? 
+16:33:13.041 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:33:13.042 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:33:13.567 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by status asc limit ? 
+16:33:13.568 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:33:13.569 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:33:15.581 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:33:15.581 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:33:15.584 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:33:26.948 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:33:26.949 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:33:26.950 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:33:29.164 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+16:33:29.165 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+16:33:29.174 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+16:33:29.894 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:33:29.895 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:33:29.898 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:33:30.906 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:33:30.907 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:33:30.908 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:36:48.079 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:36:48.079 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:36:48.081 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:36:56.771 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:36:56.771 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:36:56.772 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:37:00.463 DEBUG c.d.u.b.d.U.selectByPrimaryKey - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain where id = ? 
+16:37:00.464 DEBUG c.d.u.b.d.U.selectByPrimaryKey - ==> Parameters: UCS(String)
+16:37:00.465 DEBUG c.d.u.b.d.U.selectByPrimaryKey - <==      Total: 1
+16:37:00.763 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:37:00.763 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:37:00.765 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:37:18.938 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:37:18.939 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:37:18.940 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:37:21.303 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+16:37:21.303 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+16:37:21.307 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+16:37:22.144 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:37:22.145 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:37:22.146 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:37:23.898 DEBUG c.d.u.b.d.U.selectByPrimaryKey - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain where id = ? 
+16:37:23.898 DEBUG c.d.u.b.d.U.selectByPrimaryKey - ==> Parameters: UCS(String)
+16:37:23.899 DEBUG c.d.u.b.d.U.selectByPrimaryKey - <==      Total: 1
+16:37:41.595 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:37:41.595 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:37:41.596 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:38:12.057 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:38:12.057 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:38:12.059 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:38:14.475 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:38:14.475 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:38:14.478 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:38:15.529 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:38:15.529 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:38:15.531 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:38:22.069 DEBUG c.d.u.b.d.U.selectByPrimaryKey - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain where id = ? 
+16:38:22.069 DEBUG c.d.u.b.d.U.selectByPrimaryKey - ==> Parameters: CS1(String)
+16:38:22.070 DEBUG c.d.u.b.d.U.selectByPrimaryKey - <==      Total: 1
+16:38:22.099 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:38:22.099 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:38:22.100 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:38:25.645 DEBUG c.d.u.b.d.U.selectByPrimaryKey - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain where id = ? 
+16:38:25.645 DEBUG c.d.u.b.d.U.selectByPrimaryKey - ==> Parameters: UCS(String)
+16:38:25.646 DEBUG c.d.u.b.d.U.selectByPrimaryKey - <==      Total: 1
+16:38:25.672 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:38:25.673 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:38:25.674 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:38:55.144 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:38:55.144 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:38:55.146 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+16:38:57.253 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+16:38:57.253 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+16:38:57.255 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+16:38:58.813 DEBUG c.d.u.b.d.U.selectByPrimaryKey - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain where id = ? 
+16:38:58.813 DEBUG c.d.u.b.d.U.selectByPrimaryKey - ==> Parameters: UCS(String)
+16:38:58.814 DEBUG c.d.u.b.d.U.selectByPrimaryKey - <==      Total: 1
+16:38:58.831 DEBUG c.d.u.c.d.C.selectByExample - ==>  Preparing: select id, display_field, value_field, type, status, description, creator, create_time, updator, update_time from ccs_data_dictionary WHERE ( type = ? ) 
+16:38:58.831 DEBUG c.d.u.c.d.C.selectByExample - ==> Parameters: 0002(String)
+16:38:58.832 DEBUG c.d.u.c.d.C.selectByExample - <==      Total: 3
+16:39:20.755 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+16:39:20.756 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+16:39:21.007 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5

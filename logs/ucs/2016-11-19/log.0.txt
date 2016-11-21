@@ -1,0 +1,967 @@
+08:33:00.413 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+08:33:01.318 INFO  /ucs - Initializing Spring root WebApplicationContext
+08:33:07.498 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+08:33:08.780 ERROR net.sf.ehcache.Cache - Unable to set localhost. This prevents creation of a GUID. Cause was: dzm-PC: dzm-PC
+java.net.UnknownHostException: dzm-PC: dzm-PC
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1505) ~[na:1.8.0_60]
+	at net.sf.ehcache.Cache.<clinit>(Cache.java:217) ~[ehcache-core-2.5.0.jar:na]
+	at net.sf.ehcache.config.ConfigurationHelper.createCache(ConfigurationHelper.java:303) [ehcache-core-2.5.0.jar:na]
+	at net.sf.ehcache.config.ConfigurationHelper.createDefaultCache(ConfigurationHelper.java:219) [ehcache-core-2.5.0.jar:na]
+	at net.sf.ehcache.CacheManager.configure(CacheManager.java:651) [ehcache-core-2.5.0.jar:na]
+	at net.sf.ehcache.CacheManager.doInit(CacheManager.java:410) [ehcache-core-2.5.0.jar:na]
+	at net.sf.ehcache.CacheManager.init(CacheManager.java:352) [ehcache-core-2.5.0.jar:na]
+	at net.sf.ehcache.CacheManager.<init>(CacheManager.java:237) [ehcache-core-2.5.0.jar:na]
+	at org.springframework.cache.ehcache.EhCacheManagerFactoryBean.afterPropertiesSet(EhCacheManagerFactoryBean.java:157) [spring-context-support-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:648) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:140) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1143) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:101) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:85) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248) [spring-aop-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:988) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:959) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:472) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:240) [spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:687) [spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:523) [spring-context-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444) [spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326) [spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107) [spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:782) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:424) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:774) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:249) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at com.dzmsoft.ucs.web.test.QuickStartServer.main(QuickStartServer.java:29) [test-classes/:na]
+Caused by: java.net.UnknownHostException: dzm-PC
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_60]
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928) ~[na:1.8.0_60]
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323) ~[na:1.8.0_60]
+	at java.net.InetAddress.getLocalHost(InetAddress.java:1500) ~[na:1.8.0_60]
+	... 130 common frames omitted
+08:33:09.358 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+08:33:14.011 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+08:33:15.653 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+08:33:15.794 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+08:34:41.512 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+08:34:41.871 INFO  /ucs - Initializing Spring root WebApplicationContext
+08:34:44.652 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+08:34:46.030 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+08:34:49.205 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+08:34:50.721 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+08:34:50.752 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+08:34:58.146 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+08:34:58.261 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+08:34:58.266 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-32
+08:34:58.290 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+08:34:58.291 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+08:34:58.292 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+08:34:58.294 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+08:34:58.294 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+08:34:58.294 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+08:34:58.296 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+08:34:58.405 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+08:34:58.415 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+08:35:10.166 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user WHERE ( username = ? and status = ? ) 
+08:35:10.199 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+08:35:10.305 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+08:35:11.195 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+08:35:11.196 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+08:35:11.303 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+08:35:14.942 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsUser.status = ? and ucsPermission.type = ? ) 
+08:35:14.943 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), 02(String)
+08:35:14.969 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 16
+08:35:15.616 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+08:35:15.617 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+08:35:15.648 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+08:35:21.792 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+08:35:21.792 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+08:35:21.821 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+08:35:33.330 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+08:35:33.331 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+08:35:33.333 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+08:35:34.007 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+08:35:34.008 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+08:35:34.011 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:29:24.988 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+09:29:25.494 INFO  /ucs - Initializing Spring root WebApplicationContext
+09:29:29.219 INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+09:29:31.001 INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+09:29:35.307 INFO  /ucs - Initializing Spring FrameworkServlet 'spring-mvc'
+09:29:37.514 INFO  /ucs - Initializing Spring FrameworkServlet 'hessian-servlet'
+09:29:37.550 INFO  o.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8091
+09:29:49.243 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Enabling session validation scheduler...
+09:29:49.298 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+09:29:49.303 INFO  org.quartz.simpl.SimpleThreadPool - Job execution threads will use class loader of thread: qtp1336996537-27
+09:29:49.325 INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+09:29:49.326 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+09:29:49.328 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+09:29:49.329 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+09:29:49.329 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+09:29:49.329 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+09:29:49.332 INFO  org.quartz.core.QuartzScheduler - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+09:29:49.406 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Validating all active sessions...
+09:29:49.413 INFO  o.a.s.s.m.AbstractValidatingSessionManager - Finished session validation.  No sessions were stopped.
+09:29:59.885 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user WHERE ( username = ? and status = ? ) 
+09:29:59.925 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: admin(String), 01(String)
+09:29:59.949 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 1
+09:30:00.864 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:30:00.866 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:30:00.870 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:30:03.088 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsUser.status = ? and ucsPermission.type = ? ) 
+09:30:03.090 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), 02(String)
+09:30:03.118 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 16
+09:30:03.975 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:30:03.976 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:30:03.987 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:30:13.625 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:30:13.627 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:30:13.629 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:30:16.302 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:30:16.303 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:30:16.312 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:30:33.312 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:30:33.312 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:30:33.317 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:31:20.736 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ?, ? 
+09:31:20.738 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer), 20(Integer)
+09:31:20.751 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:31:21.439 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ?, ? 
+09:31:21.440 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 40(Integer), 20(Integer)
+09:31:21.445 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 6
+09:31:38.303 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:31:38.304 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:31:38.309 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:40:42.340 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:40:42.341 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:40:42.344 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:40:44.638 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:40:44.639 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:40:44.645 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:42:06.274 WARN  org.eclipse.jetty.servlet.ServletHandler - 
+org.apache.jasper.JasperException: /WEB-INF/views/modules/base/ucsPermissionList.jsp(8,0) PWC6117: File "/WEB-INF/views/include/easyui.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:81) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:376) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:143) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:398) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:431) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:574) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1652) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:185) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:145) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:212) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.JspPropertyGroupServlet.service(JspPropertyGroupServlet.java:132) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1243) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at com.dzmsoft.framework.base.web.filter.CharFilter.doFilter(CharFilter.java:139) ~[classes/:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+Caused by: org.apache.jasper.JasperException: PWC6117: File "/WEB-INF/views/include/easyui.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:92) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:172) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.JspUtil.getInputStream(JspUtil.java:917) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.xmlparser.XMLEncodingDetector.getEncoding(XMLEncodingDetector.java:145) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.determineSyntaxAndEncoding(ParserController.java:381) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:215) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:161) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:394) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	... 81 common frames omitted
+09:42:06.277 WARN  org.eclipse.jetty.servlet.ServletHandler - /ucs/ucsPermission/show
+org.apache.jasper.JasperException: PWC6117: File "/WEB-INF/views/include/easyui.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:92) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:172) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.JspUtil.getInputStream(JspUtil.java:917) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.xmlparser.XMLEncodingDetector.getEncoding(XMLEncodingDetector.java:145) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.determineSyntaxAndEncoding(ParserController.java:381) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:215) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:161) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:394) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:431) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:574) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1652) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:185) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:145) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:212) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.JspPropertyGroupServlet.service(JspPropertyGroupServlet.java:132) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1243) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at com.dzmsoft.framework.base.web.filter.CharFilter.doFilter(CharFilter.java:139) ~[classes/:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+09:42:08.934 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:42:08.935 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:42:08.939 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:44:16.271 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:44:16.272 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:44:16.275 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:44:18.807 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:44:18.809 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:44:18.815 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:44:23.268 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:44:23.270 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:44:23.278 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:44:26.640 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:44:26.640 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:44:26.646 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:44:53.784 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:44:53.785 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:44:53.787 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:44:56.146 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:44:56.146 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:44:56.152 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:45:33.434 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:45:33.434 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:45:33.436 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:45:35.879 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:45:35.880 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:45:35.887 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:45:39.529 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:45:39.530 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:45:39.535 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:45:42.280 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:45:42.281 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:45:42.286 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:45:46.608 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:45:46.609 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:45:46.612 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:45:51.663 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+09:45:51.664 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:45:51.666 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:45:55.847 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:45:55.847 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:45:55.852 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:45:59.543 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:45:59.543 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:45:59.547 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:46:02.039 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:46:02.040 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:46:02.053 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:46:04.421 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:46:04.421 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:46:04.430 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:46:08.751 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:46:08.752 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:46:08.760 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:46:27.228 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:46:27.228 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:46:27.230 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:46:29.438 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:46:29.439 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:46:29.443 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:46:34.502 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:46:34.503 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:46:34.509 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:47:12.317 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:47:12.317 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:47:12.319 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:47:15.408 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:47:15.408 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:47:15.413 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:47:23.389 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:47:23.389 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:47:23.393 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:47:26.482 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+09:47:26.483 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:47:26.484 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:47:40.171 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:47:40.172 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:47:40.174 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:47:42.360 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:47:42.360 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:47:42.363 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:47:45.276 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:47:45.277 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:47:45.281 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:47:47.167 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+09:47:47.167 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:47:47.169 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:47:58.043 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:47:58.043 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:47:58.045 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:48:00.362 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:48:00.362 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:48:00.365 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:48:03.486 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:48:03.487 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:48:03.489 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:48:09.835 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:48:09.836 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:48:09.839 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:48:15.442 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+09:48:15.443 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:48:15.444 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:48:20.313 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:48:20.314 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:48:20.317 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:48:26.335 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:48:26.336 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:48:26.341 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:48:42.966 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:48:42.967 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:48:42.970 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:51:27.539 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by sort desc limit ? 
+09:51:27.540 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:51:27.543 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:51:28.638 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:51:28.638 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:51:28.640 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:51:30.523 WARN  org.eclipse.jetty.servlet.ServletHandler - 
+org.apache.jasper.JasperException: /WEB-INF/views/modules/base/ucsPermissionList.jsp(8,0) PWC6117: File "/WEB-INF/views/include/easyui.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:81) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:376) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:143) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:398) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:431) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:574) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1652) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:185) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:145) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:212) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.JspPropertyGroupServlet.service(JspPropertyGroupServlet.java:132) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1243) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at com.dzmsoft.framework.base.web.filter.CharFilter.doFilter(CharFilter.java:139) ~[classes/:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+Caused by: org.apache.jasper.JasperException: PWC6117: File "/WEB-INF/views/include/easyui.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:92) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:172) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.JspUtil.getInputStream(JspUtil.java:917) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.xmlparser.XMLEncodingDetector.getEncoding(XMLEncodingDetector.java:145) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.determineSyntaxAndEncoding(ParserController.java:381) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:215) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:161) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:394) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	... 81 common frames omitted
+09:51:30.527 WARN  org.eclipse.jetty.servlet.ServletHandler - /ucs/ucsPermission/show
+org.apache.jasper.JasperException: PWC6117: File "/WEB-INF/views/include/easyui.jsp" not found
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:92) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:172) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.JspUtil.getInputStream(JspUtil.java:917) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.xmlparser.XMLEncodingDetector.getEncoding(XMLEncodingDetector.java:145) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.determineSyntaxAndEncoding(ParserController.java:381) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:215) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:161) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:394) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:431) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:574) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1652) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:185) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:145) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:212) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:451) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:374) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378) ~[org.apache.jasper.glassfish-2.2.2.v201112011158.jar:na]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.JspPropertyGroupServlet.service(JspPropertyGroupServlet.java:132) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:575) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:276) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:103) ~[jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:168) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1243) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1027) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:971) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844) ~[spring-webmvc-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) ~[javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at com.dzmsoft.framework.base.web.filter.CharFilter.doFilter(CharFilter.java:139) ~[classes/:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.3.jar:1.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.2.5.RELEASE.jar:4.2.5.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476) ~[jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:501) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:696) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:53) [jetty-io-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_60]
+09:51:34.232 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:51:34.233 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:51:34.234 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:51:36.371 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:51:36.372 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:51:36.374 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:51:39.494 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:51:39.495 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:51:39.497 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:51:45.009 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:51:45.009 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:51:45.012 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:51:46.869 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+09:51:46.869 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:51:46.871 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:51:52.050 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:51:52.050 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:51:52.053 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:51:53.681 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+09:51:53.682 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:51:53.683 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:51:57.451 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:51:57.451 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:51:57.459 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:52:01.075 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:52:01.075 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:52:01.078 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:52:02.183 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+09:52:02.183 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:52:02.187 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:52:07.235 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:52:07.236 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:52:07.238 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:52:29.462 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:52:29.462 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:52:29.465 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:52:30.386 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+09:52:30.386 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:52:30.387 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:52:33.564 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:52:33.565 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:52:33.569 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:52:34.978 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+09:52:34.979 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:52:34.980 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:52:53.905 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:52:53.905 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:52:53.907 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:52:56.372 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:52:56.372 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:52:56.375 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:52:57.905 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+09:52:57.905 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:52:57.907 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:53:07.880 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:53:07.881 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:53:07.882 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:53:10.219 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:53:10.220 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:53:10.222 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:53:11.517 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+09:53:11.517 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:53:11.518 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+09:54:58.453 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:54:58.454 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:54:58.457 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:55:00.366 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:55:00.366 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:55:00.368 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:55:04.165 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+09:55:04.166 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+09:55:04.167 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+09:55:13.377 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+09:55:13.378 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+09:55:13.389 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+09:55:15.483 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+09:55:15.484 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+09:55:15.485 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:00:09.162 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:00:09.162 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:00:09.164 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:00:11.615 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:00:11.615 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:00:11.617 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:00:13.128 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:00:13.128 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:00:13.129 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:00:18.497 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:00:18.497 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:00:18.500 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:00:19.844 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:00:19.844 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:00:19.846 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:00:22.646 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:00:22.646 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:00:22.648 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:00:23.276 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:00:23.276 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:00:23.277 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:00:27.148 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:00:27.149 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:00:27.151 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:00:28.551 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:00:28.551 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:00:28.553 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:00:58.304 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by status desc limit ? 
+10:00:58.305 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:00:58.307 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:00:58.789 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by status asc limit ? 
+10:00:58.790 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:00:58.792 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:01:17.448 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name desc limit ? 
+10:01:17.449 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:01:17.451 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:01:17.891 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:01:17.891 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:01:17.893 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:12:21.830 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:12:21.831 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:12:21.832 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:12:24.196 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:12:24.197 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:12:24.199 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:12:47.054 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:12:47.054 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:12:47.055 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:14:58.183 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:14:58.183 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:14:58.185 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:15:02.378 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:15:02.378 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:15:02.380 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:15:03.653 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:15:03.653 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:15:03.654 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:16:24.626 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:16:24.626 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:16:24.628 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:16:27.479 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:16:27.480 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:16:27.481 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:18:36.741 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:18:36.741 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:18:36.743 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:18:39.647 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:18:39.647 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:18:39.648 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:19:50.484 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:19:50.484 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:19:50.486 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:19:52.976 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:19:52.976 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:19:52.979 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:19:59.662 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:19:59.662 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:19:59.664 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:21:16.196 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:21:16.197 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:21:16.198 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:21:18.552 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:21:18.552 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:21:18.554 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:21:20.442 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:21:20.443 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:21:20.444 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:21:39.570 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:21:39.571 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:21:39.572 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:21:43.083 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:21:43.084 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:21:43.088 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:21:46.014 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:21:46.014 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:21:46.016 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:21:47.472 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:21:47.473 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:21:47.474 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:22:18.858 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:22:18.859 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:22:18.860 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:22:23.427 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:22:23.427 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:22:23.430 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:22:28.269 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:22:28.269 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:22:28.270 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:23:05.213 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:23:05.213 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:23:05.215 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:23:07.391 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:23:07.391 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:23:07.393 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:23:09.941 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:23:09.941 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:23:09.942 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:25:32.197 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==>  Preparing: select ucsPermission.id id_ucsPermission, ucsPermission.pid pid_ucsPermission, ucsPermission.type type_ucsPermission, ucsPermission.name name_ucsPermission, ucsPermission.url url_ucsPermission, ucsPermission.sort sort_ucsPermission, ucsPermission.description description_ucsPermission, ucsPermission.status status_ucsPermission, ucsPermission.domain domain_ucsPermission, ucsPermission.tree_path tree_path_ucsPermission from ucs_permission ucsPermission inner join ucs_role_permission ucsRolePermission on ucsRolePermission.permission_id=ucsPermission.id inner join ucs_role ucsRole on ucsRole.id=ucsRolePermission.role_id inner join ucs_user_role ucsUserRole on ucsUserRole.role_id=ucsRole.id inner join ucs_user ucsUser on ucsUser.id = ucsUserRole.user_id WHERE ( ucsUser.id = ? and ucsPermission.status = ? and ucsPermission.domain = ? and ucsPermission.type in ( ? , ? ) and ucsRolePermission.domain = ? ) 
+10:25:32.197 DEBUG c.d.u.b.d.U.selectPermissionsByUser - ==> Parameters: 00000000000000000000000000000000(String), 01(String), UCS(String), 00(String), 01(String), UCS(String)
+10:25:32.198 DEBUG c.d.u.b.d.U.selectPermissionsByUser - <==      Total: 5
+10:25:36.739 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:25:36.739 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:25:36.742 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:25:37.407 DEBUG c.d.u.b.d.U.selectByExample - ==>  Preparing: select id, name, status, sort, description, app_id, app_key from ucs_domain order by name asc limit ? 
+10:25:37.407 DEBUG c.d.u.b.d.U.selectByExample - ==> Parameters: 20(Integer)
+10:25:37.408 DEBUG c.d.u.b.d.U.selectByExample - <==      Total: 2
+10:30:08.762 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ? 
+10:30:08.762 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer)
+10:30:08.764 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:30:27.287 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ?, ? 
+10:30:27.306 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 20(Integer), 20(Integer)
+10:30:27.314 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 20
+10:30:27.858 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==>  Preparing: select id, username, password, salt, name, phone, email, status, create_time, domain, user_type, description from ucs_user order by username asc limit ?, ? 
+10:30:27.859 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - ==> Parameters: 40(Integer), 20(Integer)
+10:30:27.861 DEBUG c.d.u.b.d.UcsUserMapper.selectByExample - <==      Total: 6
+15:55:49.839 INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+15:55:50.582 INFO  /ucs - Initializing Spring root WebApplicationContext

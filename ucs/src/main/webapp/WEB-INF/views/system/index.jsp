@@ -23,7 +23,7 @@
             </div>
             <!-- 右侧内容结束 -->
             <!-- footer开始 -->
-            <footer>
+            <footer class="footer">
             	<div class="pull-right">&copy; 2016-2017 <a href="#" target="_blank">dzm</a></div>
             </footer>
             <!-- footer结束 -->

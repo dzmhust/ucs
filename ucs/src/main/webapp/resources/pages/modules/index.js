@@ -18,6 +18,8 @@ define(function(require, exports, module) {
     function initConfig(){
         // 菜单配置
         $('#side-menu').metisMenu();
+        //
+//        $('#content-main').slimScroll({height: "100%", railOpacity: 0.9, alwaysVisible: false});
     }
     function initAction(){
     	// 退出

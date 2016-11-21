@@ -30,11 +30,13 @@ define(function(require, exports, module) {
         })
         // 关闭页签
         $('.menu-tabs').on('click','.menu-tab i',closeTab);
+        // 选择页签
+        $('.menu-tabs').on('click','.menu-tab',selectTab);
     }
     /**
      * 判断页签是否存在
      */
-    function existTab(){
+    function existTab(tabId){
     	var isExist = false;
         $(".menu-tab").each(function () {
             if ($(this).data("id") == tabId) {
@@ -87,6 +89,22 @@ define(function(require, exports, module) {
     	
     }
     /**
+     * 选择页签
+     */
+    function selectTab(){
+    	if (!$(this).hasClass("active")) {
+            var tabId = $(this).data("id");
+            $(".main-content .tab_iframe").each(function () {
+                if ($(this).data("id") == tabId) {
+                    $(this).show().siblings(".tab_iframe").hide();
+                    return false
+                }
+            });
+            $(this).addClass("active").siblings(".menu-tab").removeClass("active");
+            showTab(this);
+        }
+    }
+    /**
      * 关闭页签
      */
     function closeTab(){
@@ -108,7 +126,7 @@ define(function(require, exports, module) {
                 if (left < 0) {
                     $(".page-tabs-content").animate({marginLeft: (left + l) + "px"}, "fast")
                 }
-                _closeTab(tabId);
+                _closeTab(tabId,this);
     		}
     		// 左边页签调整
     		var hasPre = $(this).parents(".menu-tab").prev(".menu-tab").size()>0?true:false;
@@ -129,6 +147,7 @@ define(function(require, exports, module) {
             }
     	} else{
     		_closeTab(tabId,this);
+    		showTab($('.menu-tab.active'));
     	}
     	// TODO 
     	return false;
@@ -157,6 +176,33 @@ define(function(require, exports, module) {
         });
         return width
     }
+    
+    function showTab(tab){
+		var preWidth = caculateEleWidth($(tab).prevAll());
+		var nextWidth = caculateEleWidth($(tab).nextAll());
+		var otherWidth = caculateEleWidth($(".content-tabs").children().not(".menu-tabs"));
+		var k = $(".content-tabs").outerWidth(true) - otherWidth;
+		var p = 0;
+        if ($(".page-tabs-content").outerWidth() < k) {
+            p = 0
+        } else {
+            if (nextWidth <= (k - $(tab).outerWidth(true) - $(tab).next().outerWidth(true))) {
+                if ((k - $(tab).next().outerWidth(true)) > nextWidth) {
+                    p = preWidth;
+                    var m = tab;
+                    while ((p - $(m).outerWidth()) > ($(".page-tabs-content").outerWidth() - k)) {
+                        p -= $(m).prev().outerWidth();
+                        m = $(m).prev()
+                    }
+                }
+            } else {
+                if (preWidth > (k - $(tab).outerWidth(true) - $(tab).prev().outerWidth(true))) {
+                    p = preWidth - $(tab).prev().outerWidth(true)
+                }
+            }
+        }
+        $(".page-tabs-content").animate({marginLeft: 0 - p + "px"}, "fast")
+    }
     // 输出区域
     /**
      * 添加页签
@@ -170,10 +216,11 @@ define(function(require, exports, module) {
     		var tabTitle = '<a href="javascript:;" class="active menu-tab" data-id="' + id + '">' + title + ' <i class="fa fa-times-circle"></i></a>';
     		$('.menu-tab').removeClass('active');
     		$('.menu-tabs .page-tabs-content').append(tabTitle);
-    		
     		//
     		var tabContent = '<iframe class="tab_iframe" name="iframe' + id + '" width="100%" height="100%" src="' + url + '" frameborder="0" data-id="' + id + '" seamless></iframe>';
-			$('#content-main').append(tabContent);  		
+			$('#content-main').find('iframe.tab_iframe').hide();
+			$('#content-main').append(tabContent);  
+			showTab($('.menu-tab.active'));
     	}
     }
 });

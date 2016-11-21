@@ -67,6 +67,15 @@
     height:84px;
     width: 150px;
 }
+/*footer*/
+.footer {
+    background: none repeat scroll 0 0 #fff;
+    border-top: 1px solid #e7eaec;
+    overflow: hidden;
+    padding: 10px 20px;
+    margin: 0 -15px;
+    height: 36px
+}
 /*天气*/
 #current-weather{
     background: url("../images/weather.png") no-repeat ;

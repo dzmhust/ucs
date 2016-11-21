@@ -158,6 +158,11 @@
 			<version>2.0.0</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.dzmsoft</groupId>
+			<artifactId>dzmsoft-ccs-base</artifactId>
+			<version>2.0.0</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>ucs</finalName>

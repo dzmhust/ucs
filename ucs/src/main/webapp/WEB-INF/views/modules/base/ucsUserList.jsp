@@ -6,7 +6,7 @@
 	<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
 	<%@ include file="/WEB-INF/views/include/common-css.jsp"%>
 </head>
-<body class="animated fadeInUp">
+<body class="animated fadeInDown margin">
 	<form id="searchForm" role="form">
 		<div class="row">
 			<div class="form-group col col-sm-3 col-xs-3 padding no-margin-bottom">
@@ -41,7 +41,7 @@
         </button>
         </shiro:hasPermission>
 	</div>
-	<table id="main-grid" data-toggle="main-grid">
+	<table id="main-grid" data-toggle="main-grid" >
 	</table>
 	<%@ include file="/WEB-INF/views/include/common-js.jsp"%>
 	<script>

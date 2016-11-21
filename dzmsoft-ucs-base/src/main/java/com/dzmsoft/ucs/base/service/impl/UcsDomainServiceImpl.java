@@ -11,8 +11,7 @@ import com.dzmsoft.ucs.base.pojo.UcsDomainExample;
 import com.dzmsoft.ucs.base.dao.UcsDomainMapper;
 import com.dzmsoft.ucs.base.service.UcsDomainService;
 import com.dzmsoft.framework.base.util.CheckEmptyUtil;
-import com.dzmsoft.framework.base.util.StringUtil;
-/**
+																												/**
  * Copyright (C), dzmsoft Co., Ltd
  * @author 
  * @date 
@@ -56,7 +55,6 @@ public class UcsDomainServiceImpl implements UcsDomainService{
     @Transactional(readOnly = false)
     @Override
 	public boolean insertSelective(UcsDomain record){
-				record.setId(StringUtil.getUuidString());
 				int flag = ucsDomainMapper.insertSelective(record);
 		return flag>0?true:false;
 	}

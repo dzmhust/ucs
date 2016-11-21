@@ -9,6 +9,7 @@ define(function(require, exports, module) {
 	var toastr = require('toastr');
 	var Ladda = require('ladda');
 	var constant = require('constant');
+	var util = require('util');
 	// 变量区域
 	var searchForm;
 	var mainForm;
@@ -233,7 +234,7 @@ define(function(require, exports, module) {
     function initMainGrid(){
     	mainGrid = $('#main-grid').bootstrapTable({
     		sidePagination:'server',cache:false,method:'post',url:ctx+'/ucsUser/find',queryParams:queryParams,contentType: 'application/x-www-form-urlencoded',
-    		uniqueId:'id',sortName:'username',
+    		uniqueId:'id',sortName:'username',height:getMainGridHeight(),
     		pagination:true,pageNumber:1,pageSize:20,pageList:[20,30,50],search:false,
     		toolbar:'#main-grid-tb',singleSelect:false,striped:true,clickToSelect:true,
     		columns:[
@@ -241,11 +242,25 @@ define(function(require, exports, module) {
 		        {field:'username',title:'用户帐号',sortable:true,width:100,align: 'center',valign: 'middle'},    
 		        {field:'name',title:'用户实名',sortable:true,width:100,align: 'center',valign: 'middle',hide:true},
 		        {field:'email',title:'email',sortable:true,width:100,align: 'center',valign: 'middle'},
-		        {field:'phone',title:'联系电话',sortable:true,width:100,align: 'center',valign: 'middle'},
+		        {field:'phone',title:'联系电话',sortable:true,width:100,align: 'center',valign: 'middle',formatter:fmtPhone},
 		        {field:'userType',title:'用户类型',sortable:true,width:100,align: 'center',valign: 'middle'},
 		        {field:'events',title:'操作',sortable:false,width:100,align: 'center',valign: 'middle',formatter:fmtEvents,events:mainEvents}
     		]
     	});
+    	$(window).resize(function () {
+            mainGrid.bootstrapTable('resetView', {
+                height: getMainGridHeight()
+            });
+        });
+    }
+    function fmtPhone(val){
+    	return util.fmtMobile(val);
+    }
+    /**
+     * 获取高度
+     */
+    function getMainGridHeight() {
+        return $(window).height() - $('#searchForm').outerHeight(true)-10;
     }
     /**
      * 查询条件

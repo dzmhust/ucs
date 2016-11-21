@@ -6,11 +6,11 @@
 	<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
 	<%@ include file="/WEB-INF/views/include/common-css.jsp"%>
 </head>
-<body class="animated fadeInUp">
+<body class="animated fadeInDown margin">
 	<form id="searchForm" role="form">
 		<div class="row">
 			<div class="form-group col col-sm-3 padding no-margin-bottom">
-				<label class="col col-sm-4 text-right form-label no-padding-left">查询条件:</label>
+				<label class="col col-sm-4 text-right form-label no-padding-left">系统名称:</label>
 				<div class="col col-sm-8 col-xs-6 no-padding-left">
                     <input type="text" class="form-control no-padding" name="filter_likes_name" />
                 </div>
